@@ -11,6 +11,10 @@ define ['core/periodic_table', 'core/isotopes', 'core/exceptions',
       if @properties
         @isotopes = Isotopes[@properties.symbol]
 
+    getIsotope: (idx) ->
+      return
+        
+    toString: -> @properties.symbol
 
   elements = _.map PeriodicTable.atoms, (el) ->
     ret = {}
