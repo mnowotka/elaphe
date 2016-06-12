@@ -1,5 +1,5 @@
-define ['core/periodic_table', 'core/isotopes', 'core/exceptions',
-  'lodash'], (PeriodicTable, Isotopes, Exceptions, _) ->
+define ['exports', 'core/periodic_table', 'core/isotope_data', 'core/isotope', 'core/exceptions',
+  'lodash'], (exports, PeriodicTable, IsotopeData, Isotopes, Exceptions, _) ->
   class Element
     constructor: (id) ->
       if _.isInteger id
@@ -9,10 +9,13 @@ define ['core/periodic_table', 'core/isotopes', 'core/exceptions',
       else
         throw new Exceptions.IncorrectArgumentTypeException id
       if @properties
-        @isotopes = Isotopes[@properties.symbol]
+        @isotopes = IsotopeData[@properties.symbol]
 
     getIsotope: (idx) ->
-      return
+      Isotopes()[@properties.symbol + idx]
+
+    getIsotopes: ->
+      Isotopes()[i.id] for i in @isotopes
         
     toString: -> @properties.symbol
 
@@ -22,6 +25,6 @@ define ['core/periodic_table', 'core/isotopes', 'core/exceptions',
     return ret
 
   elements = _.extend {}, elements..., {'Element': Element}
-  return elements
+  exports.Elements = elements
 
 

@@ -12,7 +12,7 @@ describe 'Testing Isotope', ->
   Elements = null
   before (done) ->
     requirejs ['core/isotope', 'core/element'], (isotope, elements) ->
-      Isotope = isotope
+      Isotope = isotope().Isotope
       Elements = elements
       done()
 
@@ -26,3 +26,6 @@ describe 'Testing Isotope', ->
     it 'can be created from atomic number and index', ->
       iso = new Isotope 6, 16
       iso.properties.halfLife.should.equal 0.747
+    it 'knows its Element', ->
+      iso = new Isotope 'C16'
+      iso.getElement().properties.symbol.should.equal 'C'

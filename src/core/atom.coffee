@@ -1,5 +1,5 @@
-define ['core/element', 'core/periodic_table', 'core/isotopes', 'core/exceptions',
-  'lodash'], (Elements, PeriodicTable, Isotopes, Exceptions, _) ->
+define ['core/element', 'core/periodic_table', 'core/isotope_data', 'core/exceptions',
+  'lodash'], (Elements, PeriodicTable, IsotopeData, Exceptions, _) ->
   class Atom
     constructor: (atom) ->
       @atomicNumber = null

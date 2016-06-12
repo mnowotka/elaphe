@@ -1,5 +1,5 @@
-define ['core/element', 'core/isotope'], (Elements, Isotope) ->
+define ['core/element', 'core/isotope'], (Elements, Isotopes) ->
   {
     Elements: Elements,
-    Isotope: Isotope,
+    Isotopes: Isotopes(),
   }
