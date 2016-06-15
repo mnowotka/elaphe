@@ -27,3 +27,5 @@ describe 'Testing Elements', ->
     it 'should be able to return a collection of Isotope instances', ->
       isotopes = Elements.C.getIsotopes()
       isotopes.should.have.length 15
+    it 'should know the most common isotope', ->
+      (Elements.C.getMostCommonIsotope()).properties.id.should.equal 'C12'

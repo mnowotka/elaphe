@@ -5,10 +5,15 @@ define ->
       "elementColor": [0.07, 0.5, 0.7],
       "exactMass": 0.0,
       "mass": 0.0,
+      "mostCommonIsotope": "Xx0",
+      "mostCommonIsotopeMass": 0.0,
       "name": "Dummy",
+      "outshellElectrons": 0,
+      "rB0": 0.0,
       "radiusCovalent": 0.0,
       "radiusVDW": 0.0,
-      "symbol": "Xx"
+      "symbol": "Xx",
+      "valences": []
     }, {
       "atomicNumber": 1,
       "boilingpoint": 20.28,
@@ -25,13 +30,18 @@ define ->
       "ionization": 13.5984,
       "mass": 1.00794,
       "meltingpoint": 14.01,
+      "mostCommonIsotope": "H1",
+      "mostCommonIsotopeMass": 1.007825032,
       "name": "Hydrogen",
       "nameOrigin": "Greek 'hydro' and 'gennao' for 'forms water'",
+      "outshellElectrons": 1,
       "period": 1,
       "periodTableBlock": "s",
+      "rB0": 0.33,
       "radiusCovalent": 0.37,
       "radiusVDW": 1.2,
-      "symbol": "H"
+      "symbol": "H",
+      "valences": [1]
     }, {
       "atomicNumber": 2,
       "boilingpoint": 4.216,
@@ -47,13 +57,18 @@ define ->
       "ionization": 24.5874,
       "mass": 4.002602,
       "meltingpoint": 0.95,
+      "mostCommonIsotope": "He4",
+      "mostCommonIsotopeMass": 4.002603254,
       "name": "Helium",
       "nameOrigin": "The Greek word for the sun was 'helios'",
+      "outshellElectrons": 2,
       "period": 1,
       "periodTableBlock": "p",
+      "rB0": 0.7,
       "radiusCovalent": 0.32,
       "radiusVDW": 1.4,
-      "symbol": "He"
+      "symbol": "He",
+      "valences": [0]
     }, {
       "atomicNumber": 3,
       "boilingpoint": 1615.0,
@@ -70,13 +85,18 @@ define ->
       "ionization": 5.3917,
       "mass": 6.941,
       "meltingpoint": 453.7,
+      "mostCommonIsotope": "Li7",
+      "mostCommonIsotopeMass": 7.01600455,
       "name": "Lithium",
       "nameOrigin": "Greek 'lithos' means 'stone'",
+      "outshellElectrons": 1,
       "period": 2,
       "periodTableBlock": "s",
+      "rB0": 1.23,
       "radiusCovalent": 1.34,
       "radiusVDW": 2.2,
-      "symbol": "Li"
+      "symbol": "Li",
+      "valences": [1]
     }, {
       "atomicNumber": 4,
       "boilingpoint": 3243.0,
@@ -93,13 +113,18 @@ define ->
       "ionization": 9.3227,
       "mass": 9.012182,
       "meltingpoint": 1560.0,
+      "mostCommonIsotope": "Be9",
+      "mostCommonIsotopeMass": 9.0121822,
       "name": "Beryllium",
       "nameOrigin": "Greek 'beryllos' for 'light-green stone'",
+      "outshellElectrons": 2,
       "period": 2,
       "periodTableBlock": "s",
+      "rB0": 0.9,
       "radiusCovalent": 0.9,
       "radiusVDW": 1.9,
-      "symbol": "Be"
+      "symbol": "Be",
+      "valences": [2]
     }, {
       "atomicNumber": 5,
       "boilingpoint": 4275.0,
@@ -116,13 +141,18 @@ define ->
       "ionization": 8.298,
       "mass": 10.811,
       "meltingpoint": 2365.0,
+      "mostCommonIsotope": "B11",
+      "mostCommonIsotopeMass": 11.0093054,
       "name": "Boron",
       "nameOrigin": "Boron means 'Bor(ax) + (carb)on'. It is found in borax and behaves a lot like carbon",
+      "outshellElectrons": 3,
       "period": 2,
       "periodTableBlock": "p",
+      "rB0": 0.82,
       "radiusCovalent": 0.82,
       "radiusVDW": 1.8,
-      "symbol": "B"
+      "symbol": "B",
+      "valences": [3]
     }, {
       "atomicNumber": 6,
       "boilingpoint": 5100.0,
@@ -138,13 +168,18 @@ define ->
       "ionization": 11.2603,
       "mass": 12.0107,
       "meltingpoint": 3825.0,
+      "mostCommonIsotope": "C12",
+      "mostCommonIsotopeMass": 12.0,
       "name": "Carbon",
       "nameOrigin": "Latin 'carboneum' for carbon",
+      "outshellElectrons": 4,
       "period": 2,
       "periodTableBlock": "p",
+      "rB0": 0.77,
       "radiusCovalent": 0.77,
       "radiusVDW": 1.7,
-      "symbol": "C"
+      "symbol": "C",
+      "valences": [4]
     }, {
       "atomicNumber": 7,
       "boilingpoint": 77.344,
@@ -161,13 +196,18 @@ define ->
       "ionization": 14.5341,
       "mass": 14.0067,
       "meltingpoint": 63.15,
+      "mostCommonIsotope": "N14",
+      "mostCommonIsotopeMass": 14.003074,
       "name": "Nitrogen",
       "nameOrigin": "Latin 'nitrogenium' ('forms saltpeter')",
+      "outshellElectrons": 5,
       "period": 2,
       "periodTableBlock": "p",
+      "rB0": 0.7,
       "radiusCovalent": 0.75,
       "radiusVDW": 1.6,
-      "symbol": "N"
+      "symbol": "N",
+      "valences": [3]
     }, {
       "atomicNumber": 8,
       "boilingpoint": 90.188,
@@ -184,13 +224,18 @@ define ->
       "ionization": 13.6181,
       "mass": 15.9994,
       "meltingpoint": 54.8,
+      "mostCommonIsotope": "O16",
+      "mostCommonIsotopeMass": 15.99491462,
       "name": "Oxygen",
       "nameOrigin": "Latin 'oxygenium' (forms acids)",
+      "outshellElectrons": 6,
       "period": 2,
       "periodTableBlock": "p",
+      "rB0": 0.66,
       "radiusCovalent": 0.73,
       "radiusVDW": 1.55,
-      "symbol": "O"
+      "symbol": "O",
+      "valences": [2]
     }, {
       "atomicNumber": 9,
       "boilingpoint": 85.0,
@@ -207,13 +252,18 @@ define ->
       "ionization": 17.4228,
       "mass": 18.9984032,
       "meltingpoint": 53.55,
+      "mostCommonIsotope": "F19",
+      "mostCommonIsotopeMass": 18.99840322,
       "name": "Fluorine",
       "nameOrigin": "Latin 'fluere' ('floats')",
+      "outshellElectrons": 7,
       "period": 2,
       "periodTableBlock": "p",
+      "rB0": 0.611,
       "radiusCovalent": 0.71,
       "radiusVDW": 1.5,
-      "symbol": "F"
+      "symbol": "F",
+      "valences": [1]
     }, {
       "atomicNumber": 10,
       "boilingpoint": 27.1,
@@ -229,13 +279,18 @@ define ->
       "ionization": 21.5645,
       "mass": 20.1797,
       "meltingpoint": 24.55,
+      "mostCommonIsotope": "Ne20",
+      "mostCommonIsotopeMass": 19.99244018,
       "name": "Neon",
       "nameOrigin": "Greek 'neo'. meaning 'new'",
+      "outshellElectrons": 8,
       "period": 2,
       "periodTableBlock": "p",
+      "rB0": 0.7,
       "radiusCovalent": 0.69,
       "radiusVDW": 1.54,
-      "symbol": "Ne"
+      "symbol": "Ne",
+      "valences": [0]
     }, {
       "atomicNumber": 11,
       "boilingpoint": 1156.0,
@@ -252,13 +307,18 @@ define ->
       "ionization": 5.1391,
       "mass": 22.98976928,
       "meltingpoint": 371.0,
+      "mostCommonIsotope": "Na23",
+      "mostCommonIsotopeMass": 22.98976928,
       "name": "Sodium",
       "nameOrigin": "Arabic 'natrun' for 'soda'",
+      "outshellElectrons": 1,
       "period": 3,
       "periodTableBlock": "s",
+      "rB0": 1.54,
       "radiusCovalent": 1.54,
       "radiusVDW": 2.4,
-      "symbol": "Na"
+      "symbol": "Na",
+      "valences": [1]
     }, {
       "atomicNumber": 12,
       "boilingpoint": 1380.0,
@@ -275,13 +335,18 @@ define ->
       "ionization": 7.6462,
       "mass": 24.305,
       "meltingpoint": 922.0,
+      "mostCommonIsotope": "Mg24",
+      "mostCommonIsotopeMass": 23.9850417,
       "name": "Magnesium",
       "nameOrigin": "Named after the city of Magnesia",
+      "outshellElectrons": 2,
       "period": 3,
       "periodTableBlock": "s",
+      "rB0": 1.36,
       "radiusCovalent": 1.3,
       "radiusVDW": 2.2,
-      "symbol": "Mg"
+      "symbol": "Mg",
+      "valences": [2]
     }, {
       "atomicNumber": 13,
       "boilingpoint": 2740.0,
@@ -298,13 +363,18 @@ define ->
       "ionization": 5.9858,
       "mass": 26.9815386,
       "meltingpoint": 933.5,
+      "mostCommonIsotope": "Al27",
+      "mostCommonIsotopeMass": 26.98153863,
       "name": "Aluminium",
       "nameOrigin": "Latin 'alumen'",
+      "outshellElectrons": 3,
       "period": 3,
       "periodTableBlock": "p",
+      "rB0": 1.18,
       "radiusCovalent": 1.18,
       "radiusVDW": 2.1,
-      "symbol": "Al"
+      "symbol": "Al",
+      "valences": [6]
     }, {
       "atomicNumber": 14,
       "boilingpoint": 2630.0,
@@ -321,13 +391,18 @@ define ->
       "ionization": 8.1517,
       "mass": 28.0855,
       "meltingpoint": 1683.0,
+      "mostCommonIsotope": "Si28",
+      "mostCommonIsotopeMass": 27.97692653,
       "name": "Silicon",
       "nameOrigin": "Latin 'silex'",
+      "outshellElectrons": 4,
       "period": 3,
       "periodTableBlock": "p",
+      "rB0": 0.937,
       "radiusCovalent": 1.11,
       "radiusVDW": 2.1,
-      "symbol": "Si"
+      "symbol": "Si",
+      "valences": [4, 6]
     }, {
       "atomicNumber": 15,
       "boilingpoint": 553.0,
@@ -344,13 +419,18 @@ define ->
       "ionization": 10.4867,
       "mass": 30.973762,
       "meltingpoint": 317.3,
+      "mostCommonIsotope": "P31",
+      "mostCommonIsotopeMass": 30.97376163,
       "name": "Phosphorus",
       "nameOrigin": "Greek 'phosphoros' for 'carries light'",
+      "outshellElectrons": 5,
       "period": 3,
       "periodTableBlock": "p",
+      "rB0": 0.89,
       "radiusCovalent": 1.06,
       "radiusVDW": 1.95,
-      "symbol": "P"
+      "symbol": "P",
+      "valences": [3, 5, 7]
     }, {
       "atomicNumber": 16,
       "boilingpoint": 717.82,
@@ -366,13 +446,18 @@ define ->
       "ionization": 10.36,
       "mass": 32.065,
       "meltingpoint": 392.2,
+      "mostCommonIsotope": "S32",
+      "mostCommonIsotopeMass": 31.972071,
       "name": "Sulfur",
       "nameOrigin": "In sanskrit 'sweb' means 'to sleep'",
+      "outshellElectrons": 6,
       "period": 3,
       "periodTableBlock": "p",
+      "rB0": 1.04,
       "radiusCovalent": 1.02,
       "radiusVDW": 1.8,
-      "symbol": "S"
+      "symbol": "S",
+      "valences": [2, 4, 6]
     }, {
       "atomicNumber": 17,
       "boilingpoint": 239.18,
@@ -389,13 +474,18 @@ define ->
       "ionization": 12.9676,
       "mass": 35.453,
       "meltingpoint": 172.17,
+      "mostCommonIsotope": "Cl35",
+      "mostCommonIsotopeMass": 34.96885268,
       "name": "Chlorine",
       "nameOrigin": "Greek 'chloros' for 'yellow-green'",
+      "outshellElectrons": 7,
       "period": 3,
       "periodTableBlock": "p",
+      "rB0": 0.997,
       "radiusCovalent": 0.99,
       "radiusVDW": 1.8,
-      "symbol": "Cl"
+      "symbol": "Cl",
+      "valences": [1]
     }, {
       "atomicNumber": 18,
       "boilingpoint": 87.45,
@@ -411,13 +501,18 @@ define ->
       "ionization": 15.7596,
       "mass": 39.948,
       "meltingpoint": 83.95,
+      "mostCommonIsotope": "Ar40",
+      "mostCommonIsotopeMass": 39.96238312,
       "name": "Argon",
       "nameOrigin": "Greek 'aergon' for 'inactive'",
+      "outshellElectrons": 8,
       "period": 3,
       "periodTableBlock": "p",
+      "rB0": 1.74,
       "radiusCovalent": 0.97,
       "radiusVDW": 1.88,
-      "symbol": "Ar"
+      "symbol": "Ar",
+      "valences": [0]
     }, {
       "atomicNumber": 19,
       "boilingpoint": 1033.0,
@@ -434,13 +529,18 @@ define ->
       "ionization": 4.3407,
       "mass": 39.0983,
       "meltingpoint": 336.8,
+      "mostCommonIsotope": "K39",
+      "mostCommonIsotopeMass": 38.96370668,
       "name": "Potassium",
       "nameOrigin": "Arabic 'al qaliy' for potash",
+      "outshellElectrons": 1,
       "period": 4,
       "periodTableBlock": "s",
+      "rB0": 2.03,
       "radiusCovalent": 1.96,
       "radiusVDW": 2.8,
-      "symbol": "K"
+      "symbol": "K",
+      "valences": [1]
     }, {
       "atomicNumber": 20,
       "boilingpoint": 1757.0,
@@ -457,13 +557,18 @@ define ->
       "ionization": 6.1132,
       "mass": 40.078,
       "meltingpoint": 1112.0,
+      "mostCommonIsotope": "Ca40",
+      "mostCommonIsotopeMass": 39.96259098,
       "name": "Calcium",
       "nameOrigin": "Latin 'calx' for 'lime'",
+      "outshellElectrons": 2,
       "period": 4,
       "periodTableBlock": "s",
+      "rB0": 1.74,
       "radiusCovalent": 1.74,
       "radiusVDW": 2.4,
-      "symbol": "Ca"
+      "symbol": "Ca",
+      "valences": [2]
     }, {
       "atomicNumber": 21,
       "boilingpoint": 3109.0,
@@ -480,13 +585,18 @@ define ->
       "ionization": 6.5615,
       "mass": 44.955912,
       "meltingpoint": 1814.0,
+      "mostCommonIsotope": "Sc45",
+      "mostCommonIsotopeMass": 44.9559119,
       "name": "Scandium",
       "nameOrigin": "Named because it was found in Scandinavia",
+      "outshellElectrons": 3,
       "period": 4,
       "periodTableBlock": "d",
+      "rB0": 1.44,
       "radiusCovalent": 1.44,
       "radiusVDW": 2.3,
-      "symbol": "Sc"
+      "symbol": "Sc",
+      "valences": []
     }, {
       "atomicNumber": 22,
       "boilingpoint": 3560.0,
@@ -503,13 +613,18 @@ define ->
       "ionization": 6.8281,
       "mass": 47.867,
       "meltingpoint": 1935.0,
+      "mostCommonIsotope": "Ti48",
+      "mostCommonIsotopeMass": 47.9479463,
       "name": "Titanium",
       "nameOrigin": "The Titans were giants in Greek mythology",
+      "outshellElectrons": 4,
       "period": 4,
       "periodTableBlock": "d",
+      "rB0": 1.32,
       "radiusCovalent": 1.36,
       "radiusVDW": 2.15,
-      "symbol": "Ti"
+      "symbol": "Ti",
+      "valences": []
     }, {
       "atomicNumber": 23,
       "boilingpoint": 3650.0,
@@ -526,13 +641,18 @@ define ->
       "ionization": 6.7462,
       "mass": 50.9415,
       "meltingpoint": 2163.0,
+      "mostCommonIsotope": "V50",
+      "mostCommonIsotopeMass": 49.9471585,
       "name": "Vanadium",
       "nameOrigin": "'Vanadis' is another name for the Nordic goddess Freyja",
+      "outshellElectrons": 5,
       "period": 4,
       "periodTableBlock": "d",
+      "rB0": 1.22,
       "radiusCovalent": 1.25,
       "radiusVDW": 2.05,
-      "symbol": "V"
+      "symbol": "V",
+      "valences": []
     }, {
       "atomicNumber": 24,
       "boilingpoint": 2945.0,
@@ -549,13 +669,18 @@ define ->
       "ionization": 6.7665,
       "mass": 51.9961,
       "meltingpoint": 2130.0,
+      "mostCommonIsotope": "Cr52",
+      "mostCommonIsotopeMass": 51.9405075,
       "name": "Chromium",
       "nameOrigin": "Greek 'chroma' means 'color'",
+      "outshellElectrons": 6,
       "period": 4,
       "periodTableBlock": "d",
+      "rB0": 1.18,
       "radiusCovalent": 1.27,
       "radiusVDW": 2.05,
-      "symbol": "Cr"
+      "symbol": "Cr",
+      "valences": []
     }, {
       "atomicNumber": 25,
       "boilingpoint": 2235.0,
@@ -572,13 +697,18 @@ define ->
       "ionization": 7.434,
       "mass": 54.938045,
       "meltingpoint": 1518.0,
+      "mostCommonIsotope": "Mn55",
+      "mostCommonIsotopeMass": 54.9380451,
       "name": "Manganese",
       "nameOrigin": "It was discovered near a town named Magnesia in black earth. Thus, it was named 'magnesia nigra', or for short, Manganese.",
+      "outshellElectrons": 7,
       "period": 4,
       "periodTableBlock": "d",
+      "rB0": 1.17,
       "radiusCovalent": 1.39,
       "radiusVDW": 2.05,
-      "symbol": "Mn"
+      "symbol": "Mn",
+      "valences": []
     }, {
       "atomicNumber": 26,
       "boilingpoint": 3023.0,
@@ -594,13 +724,18 @@ define ->
       "ionization": 7.9024,
       "mass": 55.845,
       "meltingpoint": 1808.0,
+      "mostCommonIsotope": "Fe56",
+      "mostCommonIsotopeMass": 55.9349375,
       "name": "Iron",
       "nameOrigin": "Latin 'ferrum'",
+      "outshellElectrons": 8,
       "period": 4,
       "periodTableBlock": "d",
+      "rB0": 1.17,
       "radiusCovalent": 1.25,
       "radiusVDW": 2.05,
-      "symbol": "Fe"
+      "symbol": "Fe",
+      "valences": []
     }, {
       "atomicNumber": 27,
       "boilingpoint": 3143.0,
@@ -617,13 +752,18 @@ define ->
       "ionization": 7.881,
       "mass": 58.933195,
       "meltingpoint": 1768.0,
+      "mostCommonIsotope": "Co59",
+      "mostCommonIsotopeMass": 58.933195,
       "name": "Cobalt",
       "nameOrigin": "Named after the German word 'Kobold' for 'goblin'",
+      "outshellElectrons": 9,
       "period": 4,
       "periodTableBlock": "d",
+      "rB0": 1.16,
       "radiusCovalent": 1.26,
       "radiusVDW": 2.0,
-      "symbol": "Co"
+      "symbol": "Co",
+      "valences": []
     }, {
       "atomicNumber": 28,
       "boilingpoint": 3005.0,
@@ -640,13 +780,18 @@ define ->
       "ionization": 7.6398,
       "mass": 58.6934,
       "meltingpoint": 1726.0,
+      "mostCommonIsotope": "Ni58",
+      "mostCommonIsotopeMass": 57.9353429,
       "name": "Nickel",
       "nameOrigin": "'Nickel' was the name of a mountain goblin",
+      "outshellElectrons": 10,
       "period": 4,
       "periodTableBlock": "d",
+      "rB0": 1.15,
       "radiusCovalent": 1.21,
       "radiusVDW": 2.0,
-      "symbol": "Ni"
+      "symbol": "Ni",
+      "valences": []
     }, {
       "atomicNumber": 29,
       "boilingpoint": 2840.0,
@@ -662,13 +807,18 @@ define ->
       "ionization": 7.7264,
       "mass": 63.546,
       "meltingpoint": 1356.6,
+      "mostCommonIsotope": "Cu63",
+      "mostCommonIsotopeMass": 62.9295975,
       "name": "Copper",
       "nameOrigin": "Greek 'cuprum' for Cypres",
+      "outshellElectrons": 11,
       "period": 4,
       "periodTableBlock": "d",
+      "rB0": 1.17,
       "radiusCovalent": 1.38,
       "radiusVDW": 2.0,
-      "symbol": "Cu"
+      "symbol": "Cu",
+      "valences": []
     }, {
       "atomicNumber": 30,
       "boilingpoint": 1180.0,
@@ -685,13 +835,18 @@ define ->
       "ionization": 9.3942,
       "mass": 65.38,
       "meltingpoint": 692.73,
+      "mostCommonIsotope": "Zn64",
+      "mostCommonIsotopeMass": 63.9291422,
       "name": "Zinc",
       "nameOrigin": "German 'zinking' for 'rough', because zinc ore is very rough",
+      "outshellElectrons": 2,
       "period": 4,
       "periodTableBlock": "d",
+      "rB0": 1.25,
       "radiusCovalent": 1.31,
       "radiusVDW": 2.1,
-      "symbol": "Zn"
+      "symbol": "Zn",
+      "valences": []
     }, {
       "atomicNumber": 31,
       "boilingpoint": 2478.0,
@@ -708,13 +863,18 @@ define ->
       "ionization": 5.9993,
       "mass": 69.723,
       "meltingpoint": 302.92,
+      "mostCommonIsotope": "Ga69",
+      "mostCommonIsotopeMass": 68.9255736,
       "name": "Gallium",
       "nameOrigin": "'Gallia' is an old name for France",
+      "outshellElectrons": 3,
       "period": 4,
       "periodTableBlock": "p",
+      "rB0": 1.26,
       "radiusCovalent": 1.26,
       "radiusVDW": 2.1,
-      "symbol": "Ga"
+      "symbol": "Ga",
+      "valences": [3]
     }, {
       "atomicNumber": 32,
       "boilingpoint": 3107.0,
@@ -731,13 +891,18 @@ define ->
       "ionization": 7.8994,
       "mass": 72.64,
       "meltingpoint": 1211.5,
+      "mostCommonIsotope": "Ge74",
+      "mostCommonIsotopeMass": 73.9211778,
       "name": "Germanium",
       "nameOrigin": "Latin 'germania' is an old name for Germany",
+      "outshellElectrons": 4,
       "period": 4,
       "periodTableBlock": "p",
+      "rB0": 1.188,
       "radiusCovalent": 1.22,
       "radiusVDW": 2.1,
-      "symbol": "Ge"
+      "symbol": "Ge",
+      "valences": [4]
     }, {
       "atomicNumber": 33,
       "boilingpoint": 876.0,
@@ -753,13 +918,18 @@ define ->
       "ionization": 9.7886,
       "mass": 74.9216,
       "meltingpoint": 1090.0,
+      "mostCommonIsotope": "As75",
+      "mostCommonIsotopeMass": 74.9215965,
       "name": "Arsenic",
       "nameOrigin": "Greek 'arsenikos' for 'male' or 'bold'",
+      "outshellElectrons": 5,
       "period": 4,
       "periodTableBlock": "p",
+      "rB0": 1.2,
       "radiusCovalent": 1.19,
       "radiusVDW": 2.05,
-      "symbol": "As"
+      "symbol": "As",
+      "valences": [3, 5]
     }, {
       "atomicNumber": 34,
       "boilingpoint": 958.0,
@@ -776,13 +946,18 @@ define ->
       "ionization": 9.7524,
       "mass": 78.96,
       "meltingpoint": 494.0,
+      "mostCommonIsotope": "Se80",
+      "mostCommonIsotopeMass": 79.9165213,
       "name": "Selenium",
       "nameOrigin": "Greek 'selena' for 'moon'",
+      "outshellElectrons": 6,
       "period": 4,
       "periodTableBlock": "p",
+      "rB0": 1.17,
       "radiusCovalent": 1.16,
       "radiusVDW": 1.9,
-      "symbol": "Se"
+      "symbol": "Se",
+      "valences": [2, 4, 6]
     }, {
       "atomicNumber": 35,
       "boilingpoint": 331.85,
@@ -799,13 +974,18 @@ define ->
       "ionization": 11.8138,
       "mass": 79.904,
       "meltingpoint": 265.95,
+      "mostCommonIsotope": "Br79",
+      "mostCommonIsotopeMass": 78.9183371,
       "name": "Bromine",
       "nameOrigin": "Greek 'bromos' for 'smells badly'",
+      "outshellElectrons": 7,
       "period": 4,
       "periodTableBlock": "p",
+      "rB0": 1.167,
       "radiusCovalent": 1.14,
       "radiusVDW": 1.9,
-      "symbol": "Br"
+      "symbol": "Br",
+      "valences": [1]
     }, {
       "atomicNumber": 36,
       "boilingpoint": 120.85,
@@ -822,13 +1002,18 @@ define ->
       "ionization": 13.9996,
       "mass": 83.798,
       "meltingpoint": 116.0,
+      "mostCommonIsotope": "Kr84",
+      "mostCommonIsotopeMass": 83.911507,
       "name": "Krypton",
       "nameOrigin": "Greek 'kryptos' for 'hidden'",
+      "outshellElectrons": 8,
       "period": 4,
       "periodTableBlock": "p",
+      "rB0": 1.91,
       "radiusCovalent": 1.1,
       "radiusVDW": 2.02,
-      "symbol": "Kr"
+      "symbol": "Kr",
+      "valences": [0]
     }, {
       "atomicNumber": 37,
       "boilingpoint": 961.0,
@@ -845,13 +1030,18 @@ define ->
       "ionization": 4.1771,
       "mass": 85.4678,
       "meltingpoint": 312.63,
+      "mostCommonIsotope": "Rb85",
+      "mostCommonIsotopeMass": 84.91178974,
       "name": "Rubidium",
       "nameOrigin": "Latin 'rubidus' for 'dark red'",
+      "outshellElectrons": 1,
       "period": 5,
       "periodTableBlock": "s",
+      "rB0": 2.16,
       "radiusCovalent": 2.11,
       "radiusVDW": 2.9,
-      "symbol": "Rb"
+      "symbol": "Rb",
+      "valences": [1]
     }, {
       "atomicNumber": 38,
       "boilingpoint": 1655.0,
@@ -868,13 +1058,18 @@ define ->
       "ionization": 5.6949,
       "mass": 87.62,
       "meltingpoint": 1042.0,
+      "mostCommonIsotope": "Sr88",
+      "mostCommonIsotopeMass": 87.9056121,
       "name": "Strontium",
       "nameOrigin": "Named after the mineral Strontianit",
+      "outshellElectrons": 2,
       "period": 5,
       "periodTableBlock": "s",
+      "rB0": 1.91,
       "radiusCovalent": 1.92,
       "radiusVDW": 2.55,
-      "symbol": "Sr"
+      "symbol": "Sr",
+      "valences": [2]
     }, {
       "atomicNumber": 39,
       "boilingpoint": 3611.0,
@@ -891,13 +1086,18 @@ define ->
       "ionization": 6.2173,
       "mass": 88.90585,
       "meltingpoint": 1795.0,
+      "mostCommonIsotope": "Y89",
+      "mostCommonIsotopeMass": 88.9058483,
       "name": "Yttrium",
       "nameOrigin": "Named after the small town of Ytterby near Stockholm in Sweden. Terbium. Ytterbium and Gadolinium are also named after this town.",
+      "outshellElectrons": 3,
       "period": 5,
       "periodTableBlock": "d",
+      "rB0": 1.62,
       "radiusCovalent": 1.62,
       "radiusVDW": 2.4,
-      "symbol": "Y"
+      "symbol": "Y",
+      "valences": []
     }, {
       "atomicNumber": 40,
       "boilingpoint": 4682.0,
@@ -914,13 +1114,18 @@ define ->
       "ionization": 6.6339,
       "mass": 91.224,
       "meltingpoint": 2128.0,
+      "mostCommonIsotope": "Zr90",
+      "mostCommonIsotopeMass": 89.9047044,
       "name": "Zirconium",
       "nameOrigin": "Named after the mineral zircon",
+      "outshellElectrons": 4,
       "period": 5,
       "periodTableBlock": "d",
+      "rB0": 1.45,
       "radiusCovalent": 1.48,
       "radiusVDW": 2.3,
-      "symbol": "Zr"
+      "symbol": "Zr",
+      "valences": []
     }, {
       "atomicNumber": 41,
       "boilingpoint": 5015.0,
@@ -937,13 +1142,18 @@ define ->
       "ionization": 6.7589,
       "mass": 92.90638,
       "meltingpoint": 2742.0,
+      "mostCommonIsotope": "Nb93",
+      "mostCommonIsotopeMass": 92.9063781,
       "name": "Niobium",
       "nameOrigin": "Named after Niobe, the daughter of the Greek god Tantalus.",
+      "outshellElectrons": 5,
       "period": 5,
       "periodTableBlock": "d",
+      "rB0": 1.34,
       "radiusCovalent": 1.37,
       "radiusVDW": 2.15,
-      "symbol": "Nb"
+      "symbol": "Nb",
+      "valences": []
     }, {
       "atomicNumber": 42,
       "boilingpoint": 4912.0,
@@ -960,13 +1170,18 @@ define ->
       "ionization": 7.0924,
       "mass": 95.96,
       "meltingpoint": 2896.0,
+      "mostCommonIsotope": "Mo98",
+      "mostCommonIsotopeMass": 97.9054082,
       "name": "Molybdenum",
       "nameOrigin": "This name has Greek roots. It means 'like Platinum' - it was difficult to distinguish Molybdenum from Platinum.",
+      "outshellElectrons": 6,
       "period": 5,
       "periodTableBlock": "d",
+      "rB0": 1.3,
       "radiusCovalent": 1.45,
       "radiusVDW": 2.1,
-      "symbol": "Mo"
+      "symbol": "Mo",
+      "valences": []
     }, {
       "atomicNumber": 43,
       "boilingpoint": 4538.0,
@@ -983,13 +1198,18 @@ define ->
       "ionization": 7.28,
       "mass": 98.0,
       "meltingpoint": 2477.0,
+      "mostCommonIsotope": "Tc97",
+      "mostCommonIsotopeMass": 96.906365,
       "name": "Technetium",
       "nameOrigin": "Greek 'technetos' for artificial",
+      "outshellElectrons": 7,
       "period": 5,
       "periodTableBlock": "d",
+      "rB0": 1.27,
       "radiusCovalent": 1.56,
       "radiusVDW": 2.05,
-      "symbol": "Tc"
+      "symbol": "Tc",
+      "valences": []
     }, {
       "atomicNumber": 44,
       "boilingpoint": 4425.0,
@@ -1006,13 +1226,18 @@ define ->
       "ionization": 7.3605,
       "mass": 101.07,
       "meltingpoint": 2610.0,
+      "mostCommonIsotope": "Ru102",
+      "mostCommonIsotopeMass": 101.9043493,
       "name": "Ruthenium",
       "nameOrigin": "Ruthenia is the old name of Russia",
+      "outshellElectrons": 8,
       "period": 5,
       "periodTableBlock": "d",
+      "rB0": 1.25,
       "radiusCovalent": 1.26,
       "radiusVDW": 2.05,
-      "symbol": "Ru"
+      "symbol": "Ru",
+      "valences": []
     }, {
       "atomicNumber": 45,
       "boilingpoint": 3970.0,
@@ -1029,13 +1254,18 @@ define ->
       "ionization": 7.4589,
       "mass": 102.9055,
       "meltingpoint": 2236.0,
+      "mostCommonIsotope": "Rh103",
+      "mostCommonIsotopeMass": 102.905504,
       "name": "Rhodium",
       "nameOrigin": "Greek 'rhodeos' means 'red like a rose'",
+      "outshellElectrons": 9,
       "period": 5,
       "periodTableBlock": "d",
+      "rB0": 1.25,
       "radiusCovalent": 1.35,
       "radiusVDW": 2.0,
-      "symbol": "Rh"
+      "symbol": "Rh",
+      "valences": []
     }, {
       "atomicNumber": 46,
       "boilingpoint": 3240.0,
@@ -1051,13 +1281,18 @@ define ->
       "ionization": 8.3369,
       "mass": 106.42,
       "meltingpoint": 1825.0,
+      "mostCommonIsotope": "Pd106",
+      "mostCommonIsotopeMass": 105.903486,
       "name": "Palladium",
       "nameOrigin": "Named after the asteroid Pallas",
+      "outshellElectrons": 10,
       "period": 5,
       "periodTableBlock": "d",
+      "rB0": 1.28,
       "radiusCovalent": 1.31,
       "radiusVDW": 2.05,
-      "symbol": "Pd"
+      "symbol": "Pd",
+      "valences": []
     }, {
       "atomicNumber": 47,
       "boilingpoint": 2436.0,
@@ -1073,13 +1308,18 @@ define ->
       "ionization": 7.5762,
       "mass": 107.8682,
       "meltingpoint": 1235.1,
+      "mostCommonIsotope": "Ag107",
+      "mostCommonIsotopeMass": 106.905097,
       "name": "Silver",
       "nameOrigin": "Latin 'argentum' for silver",
+      "outshellElectrons": 11,
       "period": 5,
       "periodTableBlock": "d",
+      "rB0": 1.34,
       "radiusCovalent": 1.53,
       "radiusVDW": 2.1,
-      "symbol": "Ag"
+      "symbol": "Ag",
+      "valences": []
     }, {
       "atomicNumber": 48,
       "boilingpoint": 1040.0,
@@ -1096,13 +1336,18 @@ define ->
       "ionization": 8.9938,
       "mass": 112.411,
       "meltingpoint": 594.26,
+      "mostCommonIsotope": "Cd114",
+      "mostCommonIsotopeMass": 113.9033585,
       "name": "Cadmium",
       "nameOrigin": "Greek 'kadmia' ('Galmei' = Zinc carbonate)",
+      "outshellElectrons": 2,
       "period": 5,
       "periodTableBlock": "d",
+      "rB0": 1.48,
       "radiusCovalent": 1.48,
       "radiusVDW": 2.2,
-      "symbol": "Cd"
+      "symbol": "Cd",
+      "valences": []
     }, {
       "atomicNumber": 49,
       "boilingpoint": 2350.0,
@@ -1119,13 +1364,18 @@ define ->
       "ionization": 5.7864,
       "mass": 114.818,
       "meltingpoint": 429.78,
+      "mostCommonIsotope": "In115",
+      "mostCommonIsotopeMass": 114.903878,
       "name": "Indium",
       "nameOrigin": "Named after 'Indigo' because of its blue spectrum",
+      "outshellElectrons": 3,
       "period": 5,
       "periodTableBlock": "p",
+      "rB0": 1.44,
       "radiusCovalent": 1.44,
       "radiusVDW": 2.2,
-      "symbol": "In"
+      "symbol": "In",
+      "valences": [3]
     }, {
       "atomicNumber": 50,
       "boilingpoint": 2876.0,
@@ -1141,13 +1391,18 @@ define ->
       "ionization": 7.3439,
       "mass": 118.71,
       "meltingpoint": 505.12,
+      "mostCommonIsotope": "Sn120",
+      "mostCommonIsotopeMass": 119.9021947,
       "name": "Tin",
       "nameOrigin": "Latin 'stannum' for tin",
+      "outshellElectrons": 4,
       "period": 5,
       "periodTableBlock": "p",
+      "rB0": 1.385,
       "radiusCovalent": 1.41,
       "radiusVDW": 2.25,
-      "symbol": "Sn"
+      "symbol": "Sn",
+      "valences": [4]
     }, {
       "atomicNumber": 51,
       "boilingpoint": 1860.0,
@@ -1163,13 +1418,18 @@ define ->
       "ionization": 8.6084,
       "mass": 121.76,
       "meltingpoint": 903.91,
+      "mostCommonIsotope": "Sb121",
+      "mostCommonIsotopeMass": 120.9038157,
       "name": "Antimony",
       "nameOrigin": "Arabic 'anthos ammonos' for 'blossom of the god Ammon'",
+      "outshellElectrons": 5,
       "period": 5,
       "periodTableBlock": "p",
+      "rB0": 1.4,
       "radiusCovalent": 1.38,
       "radiusVDW": 2.2,
-      "symbol": "Sb"
+      "symbol": "Sb",
+      "valences": [3, 5]
     }, {
       "atomicNumber": 52,
       "boilingpoint": 1261.0,
@@ -1186,13 +1446,18 @@ define ->
       "ionization": 9.0096,
       "mass": 127.6,
       "meltingpoint": 722.72,
+      "mostCommonIsotope": "Te130",
+      "mostCommonIsotopeMass": 129.9062244,
       "name": "Tellurium",
       "nameOrigin": "Latin 'tellus' or 'telluris' for 'Planet Earth'",
+      "outshellElectrons": 6,
       "period": 5,
       "periodTableBlock": "p",
+      "rB0": 1.378,
       "radiusCovalent": 1.35,
       "radiusVDW": 2.1,
-      "symbol": "Te"
+      "symbol": "Te",
+      "valences": [2]
     }, {
       "atomicNumber": 53,
       "boilingpoint": 457.5,
@@ -1209,13 +1474,18 @@ define ->
       "ionization": 10.4513,
       "mass": 126.90447,
       "meltingpoint": 386.7,
+      "mostCommonIsotope": "I127",
+      "mostCommonIsotopeMass": 126.904473,
       "name": "Iodine",
       "nameOrigin": "Greek 'ioeides' for 'violet'.",
+      "outshellElectrons": 7,
       "period": 5,
       "periodTableBlock": "p",
+      "rB0": 1.387,
       "radiusCovalent": 1.33,
       "radiusVDW": 2.1,
-      "symbol": "I"
+      "symbol": "I",
+      "valences": [1, 2, 5]
     }, {
       "atomicNumber": 54,
       "boilingpoint": 165.1,
@@ -1232,13 +1502,18 @@ define ->
       "ionization": 12.1298,
       "mass": 131.293,
       "meltingpoint": 161.39,
+      "mostCommonIsotope": "Xe132",
+      "mostCommonIsotopeMass": 131.9041535,
       "name": "Xenon",
       "nameOrigin": "Greek 'xenos' for 'foreigner'",
+      "outshellElectrons": 8,
       "period": 5,
       "periodTableBlock": "p",
+      "rB0": 1.98,
       "radiusCovalent": 1.3,
       "radiusVDW": 2.16,
-      "symbol": "Xe"
+      "symbol": "Xe",
+      "valences": [0, 2]
     }, {
       "atomicNumber": 55,
       "boilingpoint": 944.0,
@@ -1255,13 +1530,18 @@ define ->
       "ionization": 3.8939,
       "mass": 132.9054519,
       "meltingpoint": 301.54,
+      "mostCommonIsotope": "Cs133",
+      "mostCommonIsotopeMass": 132.9054519,
       "name": "Caesium",
       "nameOrigin": "Latin 'caesius' for 'heaven blue'.",
+      "outshellElectrons": 1,
       "period": 6,
       "periodTableBlock": "s",
+      "rB0": 2.35,
       "radiusCovalent": 2.25,
       "radiusVDW": 3.0,
-      "symbol": "Cs"
+      "symbol": "Cs",
+      "valences": [1]
     }, {
       "atomicNumber": 56,
       "boilingpoint": 2078.0,
@@ -1278,13 +1558,18 @@ define ->
       "ionization": 5.2117,
       "mass": 137.327,
       "meltingpoint": 1002.0,
+      "mostCommonIsotope": "Ba138",
+      "mostCommonIsotopeMass": 137.9052472,
       "name": "Barium",
       "nameOrigin": "Greek 'barys' for 'heavy'",
+      "outshellElectrons": 2,
       "period": 6,
       "periodTableBlock": "s",
+      "rB0": 1.98,
       "radiusCovalent": 1.98,
       "radiusVDW": 2.7,
-      "symbol": "Ba"
+      "symbol": "Ba",
+      "valences": [2]
     }, {
       "atomicNumber": 57,
       "boilingpoint": 3737.0,
@@ -1301,13 +1586,18 @@ define ->
       "ionization": 5.5769,
       "mass": 138.90547,
       "meltingpoint": 1191.0,
+      "mostCommonIsotope": "La139",
+      "mostCommonIsotopeMass": 138.9063533,
       "name": "Lanthanum",
       "nameOrigin": "Greek 'lanthanein' for 'hidden'. The Lanthanoids are also called the 'rare earth' elements.",
+      "outshellElectrons": 3,
       "period": 6,
       "periodTableBlock": "f",
+      "rB0": 1.69,
       "radiusCovalent": 1.69,
       "radiusVDW": 2.5,
-      "symbol": "La"
+      "symbol": "La",
+      "valences": []
     }, {
       "atomicNumber": 58,
       "boilingpoint": 3715.0,
@@ -1323,12 +1613,17 @@ define ->
       "ionization": 5.5387,
       "mass": 140.116,
       "meltingpoint": 1071.0,
+      "mostCommonIsotope": "Ce140",
+      "mostCommonIsotopeMass": 139.9054387,
       "name": "Cerium",
       "nameOrigin": "Named after the planetoid Ceres",
+      "outshellElectrons": 4,
       "period": 6,
       "periodTableBlock": "f",
+      "rB0": 1.83,
       "radiusVDW": 2.48,
-      "symbol": "Ce"
+      "symbol": "Ce",
+      "valences": []
     }, {
       "atomicNumber": 59,
       "boilingpoint": 3785.0,
@@ -1344,12 +1639,17 @@ define ->
       "ionization": 5.473,
       "mass": 140.90765,
       "meltingpoint": 1204.0,
+      "mostCommonIsotope": "Pr141",
+      "mostCommonIsotopeMass": 140.9076528,
       "name": "Praseodymium",
       "nameOrigin": "Greek 'prasinos didymos' for 'green twin'",
+      "outshellElectrons": 3,
       "period": 6,
       "periodTableBlock": "f",
+      "rB0": 1.82,
       "radiusVDW": 2.47,
-      "symbol": "Pr"
+      "symbol": "Pr",
+      "valences": []
     }, {
       "atomicNumber": 60,
       "boilingpoint": 3347.0,
@@ -1365,12 +1665,17 @@ define ->
       "ionization": 5.525,
       "mass": 144.242,
       "meltingpoint": 1294.0,
+      "mostCommonIsotope": "Nd142",
+      "mostCommonIsotopeMass": 141.9077233,
       "name": "Neodymium",
       "nameOrigin": "Greek 'neos didymos' for 'new twin'",
+      "outshellElectrons": 4,
       "period": 6,
       "periodTableBlock": "f",
+      "rB0": 1.81,
       "radiusVDW": 2.45,
-      "symbol": "Nd"
+      "symbol": "Nd",
+      "valences": []
     }, {
       "atomicNumber": 61,
       "boilingpoint": 3273.0,
@@ -1385,12 +1690,17 @@ define ->
       "ionization": 5.582,
       "mass": 145.0,
       "meltingpoint": 1315.0,
+      "mostCommonIsotope": "Pm145",
+      "mostCommonIsotopeMass": 144.912749,
       "name": "Promethium",
       "nameOrigin": "Named after the Greek Prometheus. Prometheus stole the fire from the gods and gave it to mankind.",
+      "outshellElectrons": 5,
       "period": 6,
       "periodTableBlock": "f",
+      "rB0": 1.8,
       "radiusVDW": 2.43,
-      "symbol": "Pm"
+      "symbol": "Pm",
+      "valences": []
     }, {
       "atomicNumber": 62,
       "boilingpoint": 2067.0,
@@ -1406,12 +1716,17 @@ define ->
       "ionization": 5.6437,
       "mass": 150.36,
       "meltingpoint": 1347.0,
+      "mostCommonIsotope": "Sm152",
+      "mostCommonIsotopeMass": 151.9197324,
       "name": "Samarium",
       "nameOrigin": "Named after the mineral Samarskit",
+      "outshellElectrons": 6,
       "period": 6,
       "periodTableBlock": "f",
+      "rB0": 1.8,
       "radiusVDW": 2.42,
-      "symbol": "Sm"
+      "symbol": "Sm",
+      "valences": []
     }, {
       "atomicNumber": 63,
       "boilingpoint": 1800.0,
@@ -1426,12 +1741,17 @@ define ->
       "ionization": 5.6704,
       "mass": 151.964,
       "meltingpoint": 1095.0,
+      "mostCommonIsotope": "Eu153",
+      "mostCommonIsotopeMass": 152.9212303,
       "name": "Europium",
       "nameOrigin": "Named after Europe",
+      "outshellElectrons": 7,
       "period": 6,
       "periodTableBlock": "f",
+      "rB0": 1.99,
       "radiusVDW": 2.4,
-      "symbol": "Eu"
+      "symbol": "Eu",
+      "valences": []
     }, {
       "atomicNumber": 64,
       "boilingpoint": 3545.0,
@@ -1447,12 +1767,17 @@ define ->
       "ionization": 6.1498,
       "mass": 157.25,
       "meltingpoint": 1585.0,
+      "mostCommonIsotope": "Gd158",
+      "mostCommonIsotopeMass": 157.9241039,
       "name": "Gadolinium",
       "nameOrigin": "Named after the Finnish chemist Johan Gadolin",
+      "outshellElectrons": 8,
       "period": 6,
       "periodTableBlock": "f",
+      "rB0": 1.79,
       "radiusVDW": 2.38,
-      "symbol": "Gd"
+      "symbol": "Gd",
+      "valences": []
     }, {
       "atomicNumber": 65,
       "boilingpoint": 3500.0,
@@ -1467,12 +1792,17 @@ define ->
       "ionization": 5.8638,
       "mass": 158.92535,
       "meltingpoint": 1629.0,
+      "mostCommonIsotope": "Tb159",
+      "mostCommonIsotopeMass": 158.9253468,
       "name": "Terbium",
       "nameOrigin": "Named after the Swedish town of Ytterby",
+      "outshellElectrons": 9,
       "period": 6,
       "periodTableBlock": "f",
+      "rB0": 1.76,
       "radiusVDW": 2.37,
-      "symbol": "Tb"
+      "symbol": "Tb",
+      "valences": []
     }, {
       "atomicNumber": 66,
       "boilingpoint": 2840.0,
@@ -1488,12 +1818,17 @@ define ->
       "ionization": 5.9389,
       "mass": 162.5,
       "meltingpoint": 1685.0,
+      "mostCommonIsotope": "Dy164",
+      "mostCommonIsotopeMass": 163.9291748,
       "name": "Dysprosium",
       "nameOrigin": "Greek 'dysprositor' for 'difficult to reach'",
+      "outshellElectrons": 10,
       "period": 6,
       "periodTableBlock": "f",
+      "rB0": 1.75,
       "radiusVDW": 2.35,
-      "symbol": "Dy"
+      "symbol": "Dy",
+      "valences": []
     }, {
       "atomicNumber": 67,
       "boilingpoint": 2968.0,
@@ -1509,12 +1844,17 @@ define ->
       "ionization": 6.0215,
       "mass": 164.93032,
       "meltingpoint": 1747.0,
+      "mostCommonIsotope": "Ho165",
+      "mostCommonIsotopeMass": 164.9303221,
       "name": "Holmium",
       "nameOrigin": "Latin 'holmia' for the old name of Stockholm",
+      "outshellElectrons": 11,
       "period": 6,
       "periodTableBlock": "f",
+      "rB0": 1.74,
       "radiusVDW": 2.33,
-      "symbol": "Ho"
+      "symbol": "Ho",
+      "valences": []
     }, {
       "atomicNumber": 68,
       "boilingpoint": 3140.0,
@@ -1530,12 +1870,17 @@ define ->
       "ionization": 6.1077,
       "mass": 167.259,
       "meltingpoint": 1802.0,
+      "mostCommonIsotope": "Er166",
+      "mostCommonIsotopeMass": 165.9302931,
       "name": "Erbium",
       "nameOrigin": "Named ofter the Swedish town of Ytterby. Terbium and Ytterbium are also named after this town.",
+      "outshellElectrons": 12,
       "period": 6,
       "periodTableBlock": "f",
+      "rB0": 1.73,
       "radiusVDW": 2.32,
-      "symbol": "Er"
+      "symbol": "Er",
+      "valences": []
     }, {
       "atomicNumber": 69,
       "boilingpoint": 2223.0,
@@ -1551,12 +1896,17 @@ define ->
       "ionization": 6.1843,
       "mass": 168.93421,
       "meltingpoint": 1818.0,
+      "mostCommonIsotope": "Tm169",
+      "mostCommonIsotopeMass": 168.9342133,
       "name": "Thulium",
       "nameOrigin": "Named after the old name of Scandinavia, 'Thule'.",
+      "outshellElectrons": 13,
       "period": 6,
       "periodTableBlock": "f",
+      "rB0": 1.72,
       "radiusVDW": 2.3,
-      "symbol": "Tm"
+      "symbol": "Tm",
+      "valences": []
     }, {
       "atomicNumber": 70,
       "boilingpoint": 1469.0,
@@ -1571,12 +1921,17 @@ define ->
       "ionization": 6.2542,
       "mass": 173.054,
       "meltingpoint": 1092.0,
+      "mostCommonIsotope": "Yb174",
+      "mostCommonIsotopeMass": 173.9388621,
       "name": "Ytterbium",
       "nameOrigin": "Like Terbium and Gadolinium, this is named after the Swedish town of Ytterby.",
+      "outshellElectrons": 14,
       "period": 6,
       "periodTableBlock": "f",
+      "rB0": 1.94,
       "radiusVDW": 2.28,
-      "symbol": "Yb"
+      "symbol": "Yb",
+      "valences": []
     }, {
       "atomicNumber": 71,
       "boilingpoint": 3668.0,
@@ -1592,13 +1947,18 @@ define ->
       "ionization": 5.4259,
       "mass": 174.9668,
       "meltingpoint": 1936.0,
+      "mostCommonIsotope": "Lu175",
+      "mostCommonIsotopeMass": 174.9407718,
       "name": "Lutetium",
       "nameOrigin": "Named after the Roman name 'Lutetia' for Paris",
+      "outshellElectrons": 15,
       "period": 6,
       "periodTableBlock": "f",
+      "rB0": 1.72,
       "radiusCovalent": 1.6,
       "radiusVDW": 2.27,
-      "symbol": "Lu"
+      "symbol": "Lu",
+      "valences": []
     }, {
       "atomicNumber": 72,
       "boilingpoint": 4875.0,
@@ -1615,13 +1975,18 @@ define ->
       "ionization": 6.8251,
       "mass": 178.49,
       "meltingpoint": 2504.0,
+      "mostCommonIsotope": "Hf180",
+      "mostCommonIsotopeMass": 179.94655,
       "name": "Hafnium",
       "nameOrigin": "'Hafnia' is the old name of Kopenhagen (Denmark)",
+      "outshellElectrons": 4,
       "period": 6,
       "periodTableBlock": "d",
+      "rB0": 1.44,
       "radiusCovalent": 1.5,
       "radiusVDW": 2.25,
-      "symbol": "Hf"
+      "symbol": "Hf",
+      "valences": []
     }, {
       "atomicNumber": 73,
       "boilingpoint": 5730.0,
@@ -1638,13 +2003,18 @@ define ->
       "ionization": 7.5496,
       "mass": 180.94788,
       "meltingpoint": 3293.0,
+      "mostCommonIsotope": "Ta181",
+      "mostCommonIsotopeMass": 180.9479958,
       "name": "Tantalum",
       "nameOrigin": "Named after the Greek myth of Tantalos",
+      "outshellElectrons": 5,
       "period": 6,
       "periodTableBlock": "d",
+      "rB0": 1.34,
       "radiusCovalent": 1.38,
       "radiusVDW": 2.2,
-      "symbol": "Ta"
+      "symbol": "Ta",
+      "valences": []
     }, {
       "atomicNumber": 74,
       "boilingpoint": 5825.0,
@@ -1661,13 +2031,18 @@ define ->
       "ionization": 7.864,
       "mass": 183.84,
       "meltingpoint": 3695.0,
+      "mostCommonIsotope": "W184",
+      "mostCommonIsotopeMass": 183.9509312,
       "name": "Tungsten",
       "nameOrigin": "'tung sten' means 'heavy stone' in Swedish. The old name (and thus the symbol 'W') was Wolfram, named after a mineral.",
+      "outshellElectrons": 6,
       "period": 6,
       "periodTableBlock": "d",
+      "rB0": 1.3,
       "radiusCovalent": 1.46,
       "radiusVDW": 2.1,
-      "symbol": "W"
+      "symbol": "W",
+      "valences": []
     }, {
       "atomicNumber": 75,
       "boilingpoint": 5870.0,
@@ -1684,13 +2059,18 @@ define ->
       "ionization": 7.8335,
       "mass": 186.207,
       "meltingpoint": 3455.0,
+      "mostCommonIsotope": "Re187",
+      "mostCommonIsotopeMass": 186.9557531,
       "name": "Rhenium",
       "nameOrigin": "Named after the German river Rhine (latin 'Rhenium').",
+      "outshellElectrons": 7,
       "period": 6,
       "periodTableBlock": "d",
+      "rB0": 1.28,
       "radiusCovalent": 1.59,
       "radiusVDW": 2.05,
-      "symbol": "Re"
+      "symbol": "Re",
+      "valences": []
     }, {
       "atomicNumber": 76,
       "boilingpoint": 5300.0,
@@ -1707,13 +2087,18 @@ define ->
       "ionization": 8.4382,
       "mass": 190.23,
       "meltingpoint": 3300.0,
+      "mostCommonIsotope": "Os192",
+      "mostCommonIsotopeMass": 191.9614807,
       "name": "Osmium",
       "nameOrigin": "Greek for 'smell'. Its oxides smell strongly like radishes.",
+      "outshellElectrons": 8,
       "period": 6,
       "periodTableBlock": "d",
+      "rB0": 1.26,
       "radiusCovalent": 1.28,
       "radiusVDW": 2.0,
-      "symbol": "Os"
+      "symbol": "Os",
+      "valences": []
     }, {
       "atomicNumber": 77,
       "boilingpoint": 4700.0,
@@ -1730,13 +2115,18 @@ define ->
       "ionization": 8.967,
       "mass": 192.217,
       "meltingpoint": 2720.0,
+      "mostCommonIsotope": "Ir193",
+      "mostCommonIsotopeMass": 192.9629264,
       "name": "Iridium",
       "nameOrigin": "Greek 'iris' for 'rainbow'",
+      "outshellElectrons": 9,
       "period": 6,
       "periodTableBlock": "d",
+      "rB0": 1.27,
       "radiusCovalent": 1.37,
       "radiusVDW": 2.0,
-      "symbol": "Ir"
+      "symbol": "Ir",
+      "valences": []
     }, {
       "atomicNumber": 78,
       "boilingpoint": 4100.0,
@@ -1753,13 +2143,18 @@ define ->
       "ionization": 8.9588,
       "mass": 195.084,
       "meltingpoint": 2042.1,
+      "mostCommonIsotope": "Pt195",
+      "mostCommonIsotopeMass": 194.9647911,
       "name": "Platinum",
       "nameOrigin": "Spanish 'platina' means 'small silver'",
+      "outshellElectrons": 10,
       "period": 6,
       "periodTableBlock": "d",
+      "rB0": 1.3,
       "radiusCovalent": 1.28,
       "radiusVDW": 2.05,
-      "symbol": "Pt"
+      "symbol": "Pt",
+      "valences": []
     }, {
       "atomicNumber": 79,
       "boilingpoint": 3130.0,
@@ -1775,13 +2170,18 @@ define ->
       "ionization": 9.2255,
       "mass": 196.966569,
       "meltingpoint": 1337.58,
+      "mostCommonIsotope": "Au197",
+      "mostCommonIsotopeMass": 196.9665687,
       "name": "Gold",
       "nameOrigin": "Latin 'aurum'. Named after Aurora, the goddess of sunrise",
+      "outshellElectrons": 11,
       "period": 6,
       "periodTableBlock": "d",
+      "rB0": 1.34,
       "radiusCovalent": 1.44,
       "radiusVDW": 2.1,
-      "symbol": "Au"
+      "symbol": "Au",
+      "valences": []
     }, {
       "atomicNumber": 80,
       "boilingpoint": 629.88,
@@ -1797,13 +2197,18 @@ define ->
       "ionization": 10.4375,
       "mass": 200.59,
       "meltingpoint": 234.31,
+      "mostCommonIsotope": "Hg202",
+      "mostCommonIsotopeMass": 201.970643,
       "name": "Mercury",
       "nameOrigin": "Graeco-Latin 'hydrargyrum' for 'liquid silver'",
+      "outshellElectrons": 2,
       "period": 6,
       "periodTableBlock": "d",
+      "rB0": 1.49,
       "radiusCovalent": 1.49,
       "radiusVDW": 2.05,
-      "symbol": "Hg"
+      "symbol": "Hg",
+      "valences": []
     }, {
       "atomicNumber": 81,
       "boilingpoint": 1746.0,
@@ -1820,13 +2225,18 @@ define ->
       "ionization": 6.1082,
       "mass": 204.3833,
       "meltingpoint": 577.0,
+      "mostCommonIsotope": "Tl205",
+      "mostCommonIsotopeMass": 204.9744275,
       "name": "Thallium",
       "nameOrigin": "Greek 'tallos' for 'young twig'",
+      "outshellElectrons": 3,
       "period": 6,
       "periodTableBlock": "p",
+      "rB0": 1.48,
       "radiusCovalent": 1.48,
       "radiusVDW": 2.2,
-      "symbol": "Tl"
+      "symbol": "Tl",
+      "valences": [3]
     }, {
       "atomicNumber": 82,
       "boilingpoint": 2023.0,
@@ -1842,13 +2252,18 @@ define ->
       "ionization": 7.4167,
       "mass": 207.2,
       "meltingpoint": 600.65,
+      "mostCommonIsotope": "Pb208",
+      "mostCommonIsotopeMass": 207.9766521,
       "name": "Lead",
       "nameOrigin": "Latin 'plumbum' for Lead",
+      "outshellElectrons": 4,
       "period": 6,
       "periodTableBlock": "p",
+      "rB0": 1.48,
       "radiusCovalent": 1.47,
       "radiusVDW": 2.3,
-      "symbol": "Pb"
+      "symbol": "Pb",
+      "valences": [4]
     }, {
       "atomicNumber": 83,
       "boilingpoint": 1837.0,
@@ -1864,13 +2279,18 @@ define ->
       "ionization": 7.2855,
       "mass": 208.9804,
       "meltingpoint": 544.59,
+      "mostCommonIsotope": "Bi209",
+      "mostCommonIsotopeMass": 208.9803987,
       "name": "Bismuth",
       "nameOrigin": "The old name of Bismuth is 'Wismut', which stood for 'white mass'.",
+      "outshellElectrons": 5,
       "period": 6,
       "periodTableBlock": "p",
+      "rB0": 1.45,
       "radiusCovalent": 1.46,
       "radiusVDW": 2.3,
-      "symbol": "Bi"
+      "symbol": "Bi",
+      "valences": [3]
     }, {
       "atomicNumber": 84,
       "discoverers": ["M. Sklodowska-Curie", "P. Curie"],
@@ -1886,12 +2306,17 @@ define ->
       "ionization": 8.414,
       "mass": 209.0,
       "meltingpoint": 527.0,
+      "mostCommonIsotope": "Po209",
+      "mostCommonIsotopeMass": 208.9824304,
       "name": "Polonium",
       "nameOrigin": "Named after Poland to honor Marie Curie",
+      "outshellElectrons": 6,
       "period": 6,
       "periodTableBlock": "p",
+      "rB0": 1.46,
       "radiusVDW": 2.0,
-      "symbol": "Po"
+      "symbol": "Po",
+      "valences": [2]
     }, {
       "atomicNumber": 85,
       "boilingpoint": 610.0,
@@ -1908,12 +2333,17 @@ define ->
       "ionization": 0.0,
       "mass": 210.0,
       "meltingpoint": 575.0,
+      "mostCommonIsotope": "At210",
+      "mostCommonIsotopeMass": 209.987148,
       "name": "Astatine",
       "nameOrigin": "Greek 'astator' for 'changing'",
+      "outshellElectrons": 7,
       "period": 6,
       "periodTableBlock": "p",
+      "rB0": 1.45,
       "radiusVDW": 2.0,
-      "symbol": "At"
+      "symbol": "At",
+      "valences": [1]
     }, {
       "atomicNumber": 86,
       "boilingpoint": 211.4,
@@ -1929,13 +2359,18 @@ define ->
       "ionization": 10.7485,
       "mass": 222.0,
       "meltingpoint": 202.0,
+      "mostCommonIsotope": "Rn211",
+      "mostCommonIsotopeMass": 210.990601,
       "name": "Radon",
       "nameOrigin": "Named after Radium. It ends with 'on' to make it clear that it is a noble gas.",
+      "outshellElectrons": 8,
       "period": 6,
       "periodTableBlock": "p",
+      "rB0": 2.4,
       "radiusCovalent": 1.45,
       "radiusVDW": 2.0,
-      "symbol": "Rn"
+      "symbol": "Rn",
+      "valences": [0]
     }, {
       "atomicNumber": 87,
       "boilingpoint": 950.0,
@@ -1951,12 +2386,17 @@ define ->
       "ionization": 4.0727,
       "mass": 223.0,
       "meltingpoint": 300.0,
+      "mostCommonIsotope": "Fr223",
+      "mostCommonIsotopeMass": 223.0197359,
       "name": "Francium",
       "nameOrigin": "Named after France to honor Marguerite Perey",
+      "outshellElectrons": 1,
       "period": 7,
       "periodTableBlock": "s",
+      "rB0": 2.0,
       "radiusVDW": 2.0,
-      "symbol": "Fr"
+      "symbol": "Fr",
+      "valences": [1]
     }, {
       "atomicNumber": 88,
       "boilingpoint": 1413.0,
@@ -1972,12 +2412,17 @@ define ->
       "ionization": 5.2784,
       "mass": 226.0,
       "meltingpoint": 973.0,
+      "mostCommonIsotope": "Ra223",
+      "mostCommonIsotopeMass": 223.0185022,
       "name": "Radium",
       "nameOrigin": "Latin 'radius' for 'beam', as it is radioactive",
+      "outshellElectrons": 2,
       "period": 7,
       "periodTableBlock": "s",
+      "rB0": 1.9,
       "radiusVDW": 2.0,
-      "symbol": "Ra"
+      "symbol": "Ra",
+      "valences": [2]
     }, {
       "atomicNumber": 89,
       "boilingpoint": 3470.0,
@@ -1993,12 +2438,17 @@ define ->
       "ionization": 5.17,
       "mass": 227.0,
       "meltingpoint": 1324.0,
+      "mostCommonIsotope": "Ac227",
+      "mostCommonIsotopeMass": 227.0277521,
       "name": "Actinium",
       "nameOrigin": "Greek 'aktis' for 'beam' - actinium is radioactive",
+      "outshellElectrons": 3,
       "period": 7,
       "periodTableBlock": "f",
+      "rB0": 1.88,
       "radiusVDW": 2.0,
-      "symbol": "Ac"
+      "symbol": "Ac",
+      "valences": []
     }, {
       "atomicNumber": 90,
       "boilingpoint": 5060.0,
@@ -2013,12 +2463,17 @@ define ->
       "ionization": 6.3067,
       "mass": 232.03806,
       "meltingpoint": 2028.0,
+      "mostCommonIsotope": "Th232",
+      "mostCommonIsotopeMass": 232.0380553,
       "name": "Thorium",
       "nameOrigin": "Named after the German god of thunder: Thor",
+      "outshellElectrons": 4,
       "period": 7,
       "periodTableBlock": "f",
+      "rB0": 1.79,
       "radiusVDW": 2.4,
-      "symbol": "Th"
+      "symbol": "Th",
+      "valences": []
     }, {
       "atomicNumber": 91,
       "boilingpoint": 4300.0,
@@ -2033,12 +2488,17 @@ define ->
       "ionization": 5.89,
       "mass": 231.03588,
       "meltingpoint": 1845.0,
+      "mostCommonIsotope": "Pa231",
+      "mostCommonIsotopeMass": 231.035884,
       "name": "Protactinium",
       "nameOrigin": "Greek 'protos' for 'ancester'. Protactinium is before Actinium in the periodic table.",
+      "outshellElectrons": 3,
       "period": 7,
       "periodTableBlock": "f",
+      "rB0": 1.61,
       "radiusVDW": 2.0,
-      "symbol": "Pa"
+      "symbol": "Pa",
+      "valences": []
     }, {
       "atomicNumber": 92,
       "boilingpoint": 4407.0,
@@ -2053,12 +2513,17 @@ define ->
       "ionization": 6.1941,
       "mass": 238.02891,
       "meltingpoint": 1408.0,
+      "mostCommonIsotope": "U238",
+      "mostCommonIsotopeMass": 238.0507882,
       "name": "Uranium",
       "nameOrigin": "Greek 'ouranos' for 'heaven'. Named after the planet Uranus.",
+      "outshellElectrons": 4,
       "period": 7,
       "periodTableBlock": "f",
+      "rB0": 1.58,
       "radiusVDW": 2.3,
-      "symbol": "U"
+      "symbol": "U",
+      "valences": []
     }, {
       "atomicNumber": 93,
       "boilingpoint": 4175.0,
@@ -2073,12 +2538,17 @@ define ->
       "ionization": 6.2657,
       "mass": 237.0,
       "meltingpoint": 912.0,
+      "mostCommonIsotope": "Np236",
+      "mostCommonIsotopeMass": 236.04657,
       "name": "Neptunium",
       "nameOrigin": "Named after the planet Neptune.",
+      "outshellElectrons": 5,
       "period": 7,
       "periodTableBlock": "f",
+      "rB0": 1.55,
       "radiusVDW": 2.0,
-      "symbol": "Np"
+      "symbol": "Np",
+      "valences": []
     }, {
       "atomicNumber": 94,
       "boilingpoint": 3505.0,
@@ -2093,12 +2563,17 @@ define ->
       "ionization": 6.026,
       "mass": 244.0,
       "meltingpoint": 913.0,
+      "mostCommonIsotope": "Pu238",
+      "mostCommonIsotopeMass": 238.0495599,
       "name": "Plutonium",
       "nameOrigin": "Named after the planet Pluto.",
+      "outshellElectrons": 6,
       "period": 7,
       "periodTableBlock": "f",
+      "rB0": 1.53,
       "radiusVDW": 2.0,
-      "symbol": "Pu"
+      "symbol": "Pu",
+      "valences": []
     }, {
       "atomicNumber": 95,
       "boilingpoint": 2880.0,
@@ -2113,12 +2588,17 @@ define ->
       "ionization": 5.9738,
       "mass": 243.0,
       "meltingpoint": 1449.0,
+      "mostCommonIsotope": "Am241",
+      "mostCommonIsotopeMass": 241.0568291,
       "name": "Americium",
       "nameOrigin": "Named after America.",
+      "outshellElectrons": 7,
       "period": 7,
       "periodTableBlock": "f",
+      "rB0": 1.07,
       "radiusVDW": 2.0,
-      "symbol": "Am"
+      "symbol": "Am",
+      "valences": []
     }, {
       "atomicNumber": 96,
       "boilingpoint": 3383.0,
@@ -2133,12 +2613,17 @@ define ->
       "ionization": 5.9914,
       "mass": 247.0,
       "meltingpoint": 1620.0,
+      "mostCommonIsotope": "Cm243",
+      "mostCommonIsotopeMass": 243.0613891,
       "name": "Curium",
       "nameOrigin": "Named after Marie Curie.",
+      "outshellElectrons": 8,
       "period": 7,
       "periodTableBlock": "f",
+      "rB0": 0.0,
       "radiusVDW": 2.0,
-      "symbol": "Cm"
+      "symbol": "Cm",
+      "valences": []
     }, {
       "atomicNumber": 97,
       "boilingpoint": 983.0,
@@ -2153,12 +2638,17 @@ define ->
       "ionization": 6.1979,
       "mass": 247.0,
       "meltingpoint": 1258.0,
+      "mostCommonIsotope": "Bk247",
+      "mostCommonIsotopeMass": 247.070307,
       "name": "Berkelium",
       "nameOrigin": "Named after the town Berkeley where it was discovered.",
+      "outshellElectrons": 9,
       "period": 7,
       "periodTableBlock": "f",
+      "rB0": 0.0,
       "radiusVDW": 2.0,
-      "symbol": "Bk"
+      "symbol": "Bk",
+      "valences": []
     }, {
       "atomicNumber": 98,
       "boilingpoint": 1173.0,
@@ -2173,12 +2663,17 @@ define ->
       "ionization": 6.2817,
       "mass": 251.0,
       "meltingpoint": 1172.0,
+      "mostCommonIsotope": "Cf249",
+      "mostCommonIsotopeMass": 249.0748535,
       "name": "Californium",
       "nameOrigin": "Named after the US-State of California.",
+      "outshellElectrons": 10,
       "period": 7,
       "periodTableBlock": "f",
+      "rB0": 0.0,
       "radiusVDW": 2.0,
-      "symbol": "Cf"
+      "symbol": "Cf",
+      "valences": []
     }, {
       "atomicNumber": 99,
       "discoverers": ["Glenn T. Seaborg", "et al."],
@@ -2192,12 +2687,17 @@ define ->
       "ionization": 6.42,
       "mass": 252.0,
       "meltingpoint": 1130.0,
+      "mostCommonIsotope": "Es252",
+      "mostCommonIsotopeMass": 252.08298,
       "name": "Einsteinium",
       "nameOrigin": "Named after the scientist Albert Einstein.",
+      "outshellElectrons": 11,
       "period": 7,
       "periodTableBlock": "f",
+      "rB0": 0.0,
       "radiusVDW": 2.0,
-      "symbol": "Es"
+      "symbol": "Es",
+      "valences": []
     }, {
       "atomicNumber": 100,
       "discoverers": ["Glenn T. Seaborg", "et al."],
@@ -2211,12 +2711,17 @@ define ->
       "ionization": 6.5,
       "mass": 257.0,
       "meltingpoint": 1800.0,
+      "mostCommonIsotope": "Fm257",
+      "mostCommonIsotopeMass": 257.095105,
       "name": "Fermium",
       "nameOrigin": "Named after the scientist Enrico Fermi.",
+      "outshellElectrons": 12,
       "period": 7,
       "periodTableBlock": "f",
+      "rB0": 0.0,
       "radiusVDW": 2.0,
-      "symbol": "Fm"
+      "symbol": "Fm",
+      "valences": []
     }, {
       "atomicNumber": 101,
       "discoverers": ["Glenn T. Seaborg", "Albert Ghiorso", "Bernard Harvey", "Gregory Choppin", "Stanley G. Thompson"],
@@ -2230,12 +2735,17 @@ define ->
       "ionization": 6.58,
       "mass": 258.0,
       "meltingpoint": 1100.0,
+      "mostCommonIsotope": "Md258",
+      "mostCommonIsotopeMass": 258.098431,
       "name": "Mendelevium",
       "nameOrigin": "Named after the scientist D.I. Mendeleev.",
+      "outshellElectrons": 13,
       "period": 7,
       "periodTableBlock": "f",
+      "rB0": 0.0,
       "radiusVDW": 2.0,
-      "symbol": "Md"
+      "symbol": "Md",
+      "valences": []
     }, {
       "atomicNumber": 102,
       "discoveryDate": "1958",
@@ -2248,12 +2758,17 @@ define ->
       "ionization": 6.65,
       "mass": 259.0,
       "meltingpoint": 1100.0,
+      "mostCommonIsotope": "No259",
+      "mostCommonIsotopeMass": 259.10103,
       "name": "Nobelium",
       "nameOrigin": "Named after the scientist Alfred Nobel.",
+      "outshellElectrons": 14,
       "period": 7,
       "periodTableBlock": "f",
+      "rB0": 0.0,
       "radiusVDW": 2.0,
-      "symbol": "No"
+      "symbol": "No",
+      "valences": []
     }, {
       "atomicNumber": 103,
       "discoverers": ["Albert Ghiorso", "Torbjorn Sikkeland", "Almon Larsh", "Robert M. Latimer"],
@@ -2266,12 +2781,17 @@ define ->
       "ionization": 4.9,
       "mass": 262.0,
       "meltingpoint": 1900.0,
+      "mostCommonIsotope": "Lr262",
+      "mostCommonIsotopeMass": 262.10963,
       "name": "Lawrencium",
       "nameOrigin": "Named after the scientist Ernest Orlando Lawrence.",
+      "outshellElectrons": 15,
       "period": 7,
       "periodTableBlock": "f",
+      "rB0": 0.0,
       "radiusVDW": 2.0,
-      "symbol": "Lr"
+      "symbol": "Lr",
+      "valences": []
     }, {
       "atomicNumber": 104,
       "discoveryCountry": ["ru", "us"],
@@ -2283,12 +2803,17 @@ define ->
       "group": 4,
       "ionization": 6.0,
       "mass": 267.0,
+      "mostCommonIsotope": "Rf267",
+      "mostCommonIsotopeMass": 267.12153,
       "name": "Rutherfordium",
       "nameOrigin": "Named after the scientist Ernest Rutherford",
+      "outshellElectrons": 2,
       "period": 7,
       "periodTableBlock": "d",
+      "rB0": 0.0,
       "radiusVDW": 2.0,
-      "symbol": "Rf"
+      "symbol": "Rf",
+      "valences": []
     }, {
       "atomicNumber": 105,
       "discoveryCountry": ["ru", "us"],
@@ -2299,12 +2824,17 @@ define ->
       "family": "Transition",
       "group": 5,
       "mass": 268.0,
+      "mostCommonIsotope": "Db268",
+      "mostCommonIsotopeMass": 268.12545,
       "name": "Dubnium",
       "nameOrigin": "Named after the science-town Dubna in Russia",
+      "outshellElectrons": 2,
       "period": 7,
       "periodTableBlock": "d",
+      "rB0": 0.0,
       "radiusVDW": 2.0,
-      "symbol": "Db"
+      "symbol": "Db",
+      "valences": []
     }, {
       "atomicNumber": 106,
       "discoverers": ["Albert Ghiorso", "et al."],
@@ -2315,12 +2845,17 @@ define ->
       "family": "Transition",
       "group": 6,
       "mass": 271.0,
+      "mostCommonIsotope": "Sg271",
+      "mostCommonIsotopeMass": 271.13347,
       "name": "Seaborgium",
       "nameOrigin": "Named after the scientist G. Theodore Seaborg.",
+      "outshellElectrons": 2,
       "period": 7,
       "periodTableBlock": "d",
+      "rB0": 0.0,
       "radiusVDW": 2.0,
-      "symbol": "Sg"
+      "symbol": "Sg",
+      "valences": []
     }, {
       "atomicNumber": 107,
       "discoverers": ["Peter Armbruster", "Gottfried M\u00fcnzenber", "et al."],
@@ -2331,12 +2866,17 @@ define ->
       "family": "Transition",
       "group": 7,
       "mass": 272.0,
+      "mostCommonIsotope": "Bh270",
+      "mostCommonIsotopeMass": 270.13362,
       "name": "Bohrium",
       "nameOrigin": "Named after the scientist Niels Bohr.",
+      "outshellElectrons": 2,
       "period": 7,
       "periodTableBlock": "d",
+      "rB0": 0.0,
       "radiusVDW": 2.0,
-      "symbol": "Bh"
+      "symbol": "Bh",
+      "valences": []
     }, {
       "atomicNumber": 108,
       "discoverers": ["Peter Armbruster", "Gottfried M\u00fcnzenber", "et al."],
@@ -2347,12 +2887,17 @@ define ->
       "family": "Transition",
       "group": 8,
       "mass": 270.0,
+      "mostCommonIsotope": "Hs269",
+      "mostCommonIsotopeMass": 269.13406,
       "name": "Hassium",
       "nameOrigin": "Latin 'hassia' for the German county Hessen. In Hessen a lot elements have been discovered.",
+      "outshellElectrons": 2,
       "period": 7,
       "periodTableBlock": "d",
+      "rB0": 0.0,
       "radiusVDW": 2.0,
-      "symbol": "Hs"
+      "symbol": "Hs",
+      "valences": []
     }, {
       "atomicNumber": 109,
       "discoverers": ["Peter Armbruster", "Gottfried M\u00fcnzenber", "et al."],
@@ -2363,12 +2908,17 @@ define ->
       "family": "Transition",
       "group": 8,
       "mass": 276.0,
+      "mostCommonIsotope": "Mt278",
+      "mostCommonIsotopeMass": 278.15481,
       "name": "Meitnerium",
       "nameOrigin": "Named after the scientist Lise Meitner.",
+      "outshellElectrons": 2,
       "period": 7,
       "periodTableBlock": "d",
+      "rB0": 0.0,
       "radiusVDW": 2.0,
-      "symbol": "Mt"
+      "symbol": "Mt",
+      "valences": []
     }, {
       "atomicNumber": 110,
       "discoverers": ["S. Hofmann", "V. Ninov", "F. P. Hessberger", "P. Armbruster", "H. Folger", "G. M\u00fcnzenberg",
@@ -2380,11 +2930,16 @@ define ->
       "family": "Transition",
       "group": 8,
       "mass": 281.0,
+      "mostCommonIsotope": "Ds281",
+      "mostCommonIsotopeMass": 281.16206,
       "name": "Darmstadtium",
       "nameOrigin": "Named after the German city Darmstadt where many elements have been discovered.",
+      "outshellElectrons": 2,
       "period": 7,
       "periodTableBlock": "d",
-      "symbol": "Ds"
+      "rB0": 0.0,
+      "symbol": "Ds",
+      "valences": []
     }, {
       "atomicNumber": 111,
       "discoverers": ["S. Hofmann", "V. Ninov", "F. P. Hessberger", "P. Armbruster", "H. Folger", "G. M\u00fcnzenberg",
@@ -2396,11 +2951,16 @@ define ->
       "family": "Transition",
       "group": 1,
       "mass": 280.0,
+      "mostCommonIsotope": "Rg281",
+      "mostCommonIsotopeMass": 281.16537,
       "name": "Roentgenium",
       "nameOrigin": "Named after Wilhelm Conrad R\u00f6ntgen.",
+      "outshellElectrons": 2,
       "period": 7,
       "periodTableBlock": "d",
-      "symbol": "Rg"
+      "rB0": 0.0,
+      "symbol": "Rg",
+      "valences": []
     }, {
       "atomicNumber": 112,
       "discoverers": "First created at the Gesellschaft f\u00fcr Schwerionenforschung",
@@ -2410,11 +2970,16 @@ define ->
       "exactMass": 285.17411,
       "family": "Transition",
       "mass": 285.0,
+      "mostCommonIsotope": "Cn285",
+      "mostCommonIsotopeMass": 285.17411,
       "name": "Copernicium",
       "nameOrigin": "Historically known as eka-mercury. Ununbium is a temporary IUPAC systematic element name.",
+      "outshellElectrons": 2,
       "period": 7,
       "periodTableBlock": "d",
-      "symbol": "Cn"
+      "rB0": 0.0,
+      "symbol": "Cn",
+      "valences": []
     }, {
       "atomicNumber": 113,
       "discoverers": ["Russian scientists at Dubna (JINR)",

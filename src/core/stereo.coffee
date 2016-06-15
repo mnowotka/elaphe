@@ -1,0 +1,7 @@
+define ->
+  {
+    CHI_UNSPECIFIED: 0
+    CHI_TETRAHEDRAL_CW: 1
+    CHI_TETRAHEDRAL_CCW: 2
+    CHI_OTHER: 3    
+  }
