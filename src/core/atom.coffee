@@ -10,7 +10,7 @@ define ['exports', 'core/element', 'core/periodic_table', 'core/isotope', 'core/
       @charge = 0
       @explicitHydrogens = 0
       @stereo = Stereo.CHI_UNSPECIFIED
-      @index = 0
+      @index = -1
       @radicalElectrons = 0
       @noImplicit = false
       @isAromatic = false

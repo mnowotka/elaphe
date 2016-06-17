@@ -1,0 +1,10 @@
+define ->
+  {
+    NONE: 0
+    BEGINWEDGE: 1
+    BEGINDASH: 2
+    ENDDOWNRIGHT: 3
+    ENDUPRIGHT: 4
+    EITHERDOUBLE: 5
+    UNKNOWN: 6
+  }

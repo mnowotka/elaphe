@@ -12,14 +12,26 @@ define ->
         @message
       return
 
+    UnrecognisedBondType: (type) ->
+      @message = "Unrecognized bond type " + type
+      @toString =>
+        @message
+      return      
+
     IncorrectElementIndexException: (idx) ->
       @message = "Incorrect element index " + idx
       @toString =>
         @message
       return
 
-    NoOwningMolException: (atom) ->
-      @message = "No owning molecule defined for atom" + atom
+    IncorrectAtomIndexException: (idx) ->
+      @message = "Incorrect atom index " + idx
+      @toString =>
+        @message
+      return
+
+    NoOwningMolException: () ->
+      @message = "No owning molecule defined"
       @toString =>
         @message
       return
