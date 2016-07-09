@@ -4,12 +4,11 @@ define ['exports', 'core/element', 'core/periodic_table', 'core/isotope', 'core/
   'lodash'], (exports, Elements, PeriodicTable, Isotopes, Stereo, Hybridization, BondType, BondDirection, BondStereo, Atom, Exceptions, _) ->
   class Bond
 
-    constructor: (bondType) ->
+    constructor: (@bondType = BondType.UNSPECIFIED) ->
       if not _.isInteger(bondType)
         throw new Exceptions.IncorrectArgumentTypeException bondType
       if bondType not in (_.values BondType)
         throw new Exceptions.UnrecognisedBondType bondType
-      @bondType = bondType
       @isAromatic = false
       @isConjugated = false
       @direction = BondDirection.NONE

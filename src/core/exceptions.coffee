@@ -30,6 +30,48 @@ define ->
         @message
       return
 
+    NoPartialBondException: ->
+      @message = "No such partial bond"
+      @toString =>
+        @message
+      return
+
+    IncorrectOwnershipException: ->
+      @message = "Can't delete the object from the molecule that dosn't belong to it. "
+      @toString =>
+        @message
+      return
+
+    SelfBondException: (idx) ->
+      @message = "Incorrect bond with the same begin and end atom index " + idx
+      @toString =>
+        @message
+      return
+
+    AddBondException: (idx) ->
+      @message = "Bond cannot be added"
+      @toString =>
+        @message
+      return
+
+    AtomNumberMismatchException: ->
+      @message = "Atom index mismatch"
+      @toString =>
+        @message
+      return
+
+    IndexMismatchException: ->
+      @message = "Index mismatch"
+      @toString =>
+        @message
+      return      
+
+    NotInitiatedException: ->
+      @message = "Object not initiated"
+      @toString =>
+        @message
+      return      
+
     NoOwningMolException: () ->
       @message = "No owning molecule defined"
       @toString =>

@@ -23,3 +23,5 @@ describe 'Testing Atom', ->
   describe 'Creating the Bond object', ->
     it 'can be created from bond type', ->
       b = new Bond BondType.UNSPECIFIED
+    it 'can be created with a default bond type', ->
+      b = new Bond()

@@ -1,151 +1,249 @@
-define ['exports', 'core/element', 'core/periodic_table', 'core/isotope', 'core/stereo', 'core/hybridization_type',
+define ['exports', 'core/element', 'core/periodic_table', 'core/isotope', 'core/constants', 'core/stereo', 'core/hybridization_type',
   'core/bond_type', 'core/bond_direction', 'core_bond_stereo', 'core/bond',
-  'core/atom', 'core/exceptions',
-  'lodash'], (exports, Elements, PeriodicTable, Isotopes, Stereo, Hybridization, BondType, BondDirection, BondStereo, Bond, Atom, Exceptions, _) ->
+  'core/atom', 'graph/adjacency_list', 'core/ring_info', 'core/exceptions',
+  'lodash'], (exports, Elements, PeriodicTable, Isotopes, Constants, Stereo, Hybridization, BondType, BondDirection, BondStereo, Bond, Atom, Graph, RingInfo, Exceptions, _) ->
 
   class Molecule
-    constructor: ->
-      return
+    constructor: () ->
+      @graph = new Graph()
+      @atomBookmarks = {}
+      @bondBookmarks = {}
+      @ringInfo = new RingInfo()
+      @conformers = []
+      @properties = {}
 
-    getNumAtoms: (onlyExplicit = 1) ->
-      return
+    copy: ->
+      ret = new Molecule()
+      ret.graph = @graph.copy()
+      ret.atomBookmarks = _.copy @atomBookmarks
+      ret.bondBookmarks = _.copy @bondBookmarks
+      ret.ringInfo = @ringInfo.copy()
+      ret.conformers = _.copy @conformers
+      ret.properties = _.copy @properties
 
-    getNumHeavyAtoms: ->
-      return
+    getNumAtoms: (onlyExplicit = true) ->
+      ret = @graph.getNumVertices()
+      if not onlyExplicit
+          ret += _.sum atom.getTotalNumHs() for atom in @graph.getVertices()
+      return ret
 
-    getAtomWithIdx: (idx) ->
-      return
+    getNumHeavyAtoms: -> (atom for atom in @graph.getVertices() if atom.getAtomicNumber() > 1).length
 
-    getAtomDegree: (atom) ->
-      return
+    getAtomWithIdx: (idx) -> @graph.getVertices()[idx]
+
+    getAtomDegree: (atom) -> @graph.getDegree atom
 
     getNumBonds: (onlyHeavy = 1) ->
-      return
+      ret = @graph.getNumEdges()
+      if not onlyHeavy
+        ret += _.sum atom.getTotalNumHs() for atom in @graph.getVertices()
+      return ret
 
-    getBondWithIdx: (idx) ->
-      return
+    getBondWithIdx: (idx) -> @graph.getEdges()[idx]
 
-    getBondBetweenAtoms: (idx1, idx2) ->
-      return
+    getBondBetweenAtoms: (idx1, idx2) -> @graph.getEdgeBetweenVertices(idx1, idx2)
+
+    getAtomNeighbors: (atom) -> @graph.getAdjacentVertices(atom)
+
+    getAtomNeighborsIdx: (atom) -> @graph.getAdjacentVerticesIdx(atom)
+
+    getAtomBonds: (atom) -> @graph.getVertexEdges(atom)
 
     getConformer: (id = -1) ->
-      return
+      if not @conformers
+        return
+      if id < 0
+        return _.front @conformers
+      res = (conformer in @conformers if conformer.id == id)
+      if not res
+        return
+      return res[0]
 
     removeConformer: (id) ->
-      return
+      @conformers = (conformer in @conformers if conformer.id != id)
 
     clearConformers: () ->
-      return
+      @conformers = []
 
     addConformer: (conformer, assignId = false) ->
-      return
+      if conformer.getNumAtoms() != @getNumAtoms()
+        throw new Exceptions.AtomNumberMismatchException()
+      if assignId
+        conformer.id = _.maxBy(@conformers, (conf) -> conf.id) + 1
+      conformer.setOwningMol this
+      @conformers.push conformer
+      return conformer.id
 
-    getNumConformers: () ->
-      return
+    getNumConformers: () -> @conformers.length
 
-    getRingInfo: () ->
-      return
+    getRingInfo: () -> @ringInfo
 
-    getAtomNeighbors: () ->
-      return
-
-    getAtomBonds: () ->
-      return
-
-    getVertices: () ->
-      return
-
-    getEdges: () ->
-      return
-
-    getVertices: () ->
-      return
-
-    getTopology: () ->
-      return
+    getTopology: () -> @graph
 
     clearComputedProps: (includeRings = true) ->
+      #TODO: implement
       return
 
     updatePropertyCache: (bool strict = true) ->
+      #TODO: implement
       return
 
     needsUpdatePropertyCache: () ->
+      #TODO: implement
       return
 
     addAtom: (atom, updateLabel = true, takeOwnership = false) ->
-      return
+      if not takeOwnership
+        atomP = atom.copy()
+      else
+        atomP = atom
+      atomP.setOwningMol this
+      idx = @graph.addVertex atomP
+      atomP.index = idx
+      if updateLabel
+        @replaceAtomBookmark atomP, Constants.ci_RIGHTMOST_ATOM
+      for conformer in @conformers
+        conformer.setAtomPos idx, [0.0, 0.0, 0.0]
+      return idx
 
     getActiveAtom: () ->
-      return
+      if @hasAtomBookmark Constants.ci_RIGHTMOST_ATOM
+        return @getAtomWithBookmark Constants.ci_RIGHTMOST_ATOM
+      else
+        return @getLastAtom()
 
     setActiveAtom: (atom) ->
-      return
+      @clearAtomBookmark Constants.ci_RIGHTMOST_ATOM
+      @setAtomBookmark atom, Constants.ci_RIGHTMOST_ATOM
 
     replaceAtom: (idx, atom, updateLabel = false) ->
-      return
+      numVertices = @graph.getNumVertices()
+      if not (0 <= idx < numVertices)
+        throw new Exceptions.IncorrectAtomIndexException bond.beginAtomIdx
+      atomP = atom.copy()
+      atomP.setOwningMol this
+      atomP.index = idx
+      @graph.vertices[idx] = atomP
 
-    removeAtom: (what) ->
-      return
+    removeAtom: (atom) ->
+      if not atom.owningMol.equal(this)
+        throw new Exceptions.IncorrectOwnershipException()
+      @graph.removeVertex(atom)
 
-    getLastAtom: () ->
-      return
+    removeBond: (idx1, idx2) ->
+      if not _.isInteger(idx1) or 0 <= idx1 < @getNumAtoms()
+        throw new Exceptions.IncorrectAtomIndexException idx1
+      if not _.isInteger(idx2) or 0 <= idx2 < @getNumAtoms()
+        throw new Exceptions.IncorrectAtomIndexException idx2
+      bond = @getBondBetweenAtoms idx1, idx2
+      if not bond or not bond.owningMol.equal this
+        throw new Exceptions.IncorrectOwnershipException()
+      #TODO: remove any bookmarks which point to this bond
+      getBondBetweenAtoms(v, idx2)?.stereoAtoms = [] for v in @getAtomNeighborsIdx(idx1) when v isnt idx2
+      getBondBetweenAtoms(v, idx1)?.stereoAtoms = [] for v in @getAtomNeighborsIdx(idx2) when v isnt idx1
+      @ringInfo.reset()
+
+    getLastAtom: () -> @getAtomWithIdx(@getNumAtoms()-1)
 
     addBond: (bond, takeOwnership = false) ->
-      return
+      numVertices = @graph.getNumVertices()
+      if not ( -1 < bond.beginAtomIdx < numVertices)
+        throw new Exceptions.IncorrectAtomIndexException bond.beginAtomIdx
+      if not ( -1 < bond.endAtomIdx < numVertices)
+        throw new Exceptions.IncorrectAtomIndexException bond.endAtomIdx
+      if bond.beginAtomIdx == bond.endAtomIdx
+        throw new SelfBondException bond.endAtomIdx
+      if takeOwnership
+        bondP = bond.copy()
+      else
+        bondP = bond
+      bondP.setOwningMol(this)
+      idx = @graph.addEdge(bond.beginAtomIdx, bond.endAtomIdx, bond)
+      if not _.isInteger(idx)
+        throw new Exceptions.AddBondException()
+      bondP.index = idx
+      return idx
 
     createPartialBond: (idx, bondType) ->
-      return
+      if not (0 <= idx < @graph.getNumVertices())
+        throw new Exceptions.IncorrectAtomIndexException idx
+      bond = new Bond bondType
+      bond.setOwningMol this
+      bond.setBeginAtomIdx idx
+      return bond
 
-    finishPartialBond(idx, bondBookmark, bondType) ->
-      return
+    finishPartialBond: (idx, bondBookmark, bondType) ->
+      if not @hasBondBookmark bondBookmark
+        throw new Exceptions.NoPartialBondException()
+      if not (0 <= idx < @graph.getNumVertices())
+        throw new Exceptions.IncorrectAtomIndexException idx
+      bond = @getBondWithBookmark bondBookmark
+      if bondType is BondType.UNSPECIFIED
+        bondType = bond.bondType
+      @addBond bond, idx, bondType
 
     clear: () ->
-      return
+      @graph = new Graph()
+      @atomBookmarks = {}
+      @bondBookmarks = {}
+      @ringInfo = new RingInfo()
+      @conformers = []
+      @properties = {}
 
     insertMol: (mol) ->
       return
 
     setAtomBookmark: (atom, mark) ->
-      return
+      if _.isInteger atom
+        idx = atom
+      else
+        idx = atom.index
+      @atomBookmarks[mark].push idx
 
     replaceAtomBookmark: (atom, mark) ->
-      return
+      if _.isInteger atom
+        idx = atom
+      else
+        idx = atom.index
+      @atomBookmarks[mark] = [idx]
 
-    getAtomWithBookmark: (mark) ->
-      return
+    getAtomWithBookmark: (mark) -> @getAtomWithIdx(_.head(@atomBookmarks[mark]))
 
-    getAllAtomsWithBookmark: (mark) ->
-      return
+    getAllAtomsWithBookmark: (mark) -> @getAtomWithIdx(idx) for idx in @atomBookmarks[mark]
 
-    clearAtomBookmark: (mark) ->
-      return
+    clearAtomBookmark: (mark, atom) ->
+      if not atom
+        delete @atomBookmarks[mark]
+      else
+        _.remove @atomBookmarks[mark], atom
 
-    clearAllAtomBookmarks: () ->
-      return
+    clearAllAtomBookmarks: () -> @atomBookmarks = {}
 
-    getAtomBookmarks: () ->
-      return
+    hasAtomBookmark:(mark) -> mark of @atomBookmarks
+
+    getAtomBookmarks: () -> @atomBookmarks
 
     setBondBookmark: (bond, mark) ->
-      return
+      if _.isInteger(bond)
+        idx = bond
+      else
+        idx = bond.index
+      @bondBookmarks[mark].push idx
 
-    getBondWithBookmark: (mark) ->
-      return
+    getBondWithBookmark: (mark) -> @getBondWithIdx(_.head(@bondBookmarks[mark]))
 
-    getAllBondsWithBookmark: (mark) ->
-      return
+    getAllBondsWithBookmark: (mark) -> @getBondWithIdx(idx) for idx in @bondBookmarks[mark]
 
     clearBondBookmark: (mark, bond) ->
-      return
+      if not bond
+        delete @bondBookmarks[mark]
+      else
+        _.remove(@bondBookmarks[mark], bond)
 
-    clearAllBondBookmarks: () ->
-      return
+    clearAllBondBookmarks: () -> @bondBookmarks = {}
 
-    hasBondBookmark: (mark) ->
-      return
+    hasBondBookmark: (mark) -> mark of @bondBookmarks
 
-    getBondBookmarks: () ->
-      return
+    getBondBookmarks: () -> @bondBookmarks
 
   exports.Molecule = Molecule
