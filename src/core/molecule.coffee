@@ -138,7 +138,11 @@ define ['exports', 'core/element', 'core/periodic_table', 'core/isotope', 'core/
       bond = @getBondBetweenAtoms idx1, idx2
       if not bond or not bond.owningMol.equal this
         throw new Exceptions.IncorrectOwnershipException()
-      #TODO: remove any bookmarks which point to this bond
+
+      for mark in _.keys @bondBookmarks
+        if bond.idx of @bondBookmarks[mark]
+          @clearBondBookmark mark, bond
+
       getBondBetweenAtoms(v, idx2)?.stereoAtoms = [] for v in @getAtomNeighborsIdx(idx1) when v isnt idx2
       getBondBetweenAtoms(v, idx1)?.stereoAtoms = [] for v in @getAtomNeighborsIdx(idx2) when v isnt idx1
       @ringInfo.reset()
@@ -153,7 +157,7 @@ define ['exports', 'core/element', 'core/periodic_table', 'core/isotope', 'core/
         throw new Exceptions.IncorrectAtomIndexException bond.endAtomIdx
       if bond.beginAtomIdx == bond.endAtomIdx
         throw new SelfBondException bond.endAtomIdx
-      if takeOwnership
+      if not takeOwnership
         bondP = bond.copy()
       else
         bondP = bond
@@ -191,7 +195,42 @@ define ['exports', 'core/element', 'core/periodic_table', 'core/isotope', 'core/
       @properties = {}
 
     insertMol: (mol) ->
-      return
+      newAtomIds = []
+      for atom in mol.graph.vertices
+        newAtom = atom.copy()
+        idx = @addAtom(newAtom, false, true)
+        newAtomIds.push(idx)
+
+      #TODO: copy properties when implemented
+
+      for bond in mol.graph.edges
+        newBond = bond.copy()
+        newBond.setOwningMol(this)
+        newBond.setBeginAtomIdx(newAtomIds[newBond.beginAtomIdx])
+        newBond.setEndAtomIdx(newAtomIds[newBond.endAtomIdx])
+        @addBond(newBond, true)
+
+      if mol.getNumConformers() and not @getNumConformers()
+        for conformer in mol.conformers
+          newConformer = new Conformer(@getNumAtoms())
+          newConformer.is3D = conformer.is3D
+          newConformer.id = conformer.id
+          _.forEach(newAtomIds, (atom, index) ->
+            newConformer.setAtomPos(atom, conformer.getAtomPos(index))
+          )
+
+      else if @getNumConformers()
+        if mol.getNumConformers() == @getNumConformers()
+          for conformer in @conformers
+            _.forEach(newAtomIds, (atom, index) ->
+              conformer.setAtomPos(atom, mol.conformers[conformer.id].getAtomPos(index))
+            )
+            
+        else
+          for conformer in @conformers
+            _.forEach(newAtomIds, (atom, index) ->
+              conformer.setAtomPos(atom, [0.0, 0.0, 0.0])
+            )
 
     setAtomBookmark: (atom, mark) ->
       if _.isInteger atom
@@ -238,7 +277,13 @@ define ['exports', 'core/element', 'core/periodic_table', 'core/isotope', 'core/
       if not bond
         delete @bondBookmarks[mark]
       else
-        _.remove(@bondBookmarks[mark], bond)
+        if _.isInteger(bond)
+          idx = bond
+        else
+          idx = bond.index
+        _.remove(@bondBookmarks[mark], idx)
+        if not @bondBookmarks[mark]
+          delete @bondBookmarks[mark]
 
     clearAllBondBookmarks: () -> @bondBookmarks = {}
 

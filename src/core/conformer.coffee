@@ -14,7 +14,7 @@ define ['exports', 'core/exceptions', 'lodash'], (exports, Exceptions, _) ->
       ret = new Conformer()
       ret.is3D = @.is3D
       ret.id = @id
-      ret.positions = _.clone @positionss
+      ret.positions = _.clone @positions
       ret.owningMol = null
 
     getOwningMol: -> @owningMol
