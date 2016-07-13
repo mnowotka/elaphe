@@ -1,5 +1,5 @@
 define ['exports', 'core/element', 'core/periodic_table', 'core/isotope', 'core/constants', 'core/stereo', 'core/hybridization_type',
-  'core/bond_type', 'core/bond_direction', 'core_bond_stereo', 'core/bond',
+  'core/bond_type', 'core/bond_direction', 'core/bond_stereo', 'core/bond',
   'core/atom', 'graph/adjacency_list', 'core/ring_info', 'core/exceptions',
   'lodash'], (exports, Elements, PeriodicTable, Isotopes, Constants, Stereo, Hybridization, BondType, BondDirection, BondStereo, Bond, Atom, Graph, RingInfo, Exceptions, _) ->
 
@@ -84,7 +84,7 @@ define ['exports', 'core/element', 'core/periodic_table', 'core/isotope', 'core/
       #TODO: implement
       return
 
-    updatePropertyCache: (bool strict = true) ->
+    updatePropertyCache: (strict = true) ->
       #TODO: implement
       return
 
@@ -225,7 +225,7 @@ define ['exports', 'core/element', 'core/periodic_table', 'core/isotope', 'core/
             _.forEach(newAtomIds, (atom, index) ->
               conformer.setAtomPos(atom, mol.conformers[conformer.id].getAtomPos(index))
             )
-            
+
         else
           for conformer in @conformers
             _.forEach(newAtomIds, (atom, index) ->
